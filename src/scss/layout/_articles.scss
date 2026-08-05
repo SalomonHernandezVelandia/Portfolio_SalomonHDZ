@@ -1,0 +1,14 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+
+.articles-grid{
+    display:grid;
+    grid-template-columns:50% 50%;
+    gap:30px;
+}
+
+.article-card-test{
+    width: 150px;
+    height:250px;
+}

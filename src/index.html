@@ -8,157 +8,330 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <script src="js/projectData.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap" rel="stylesheet">
     <script src="js/svgIcons.js"></script>
-    <script src="js/projects.js"></script>
+    <script src="js/data/projectData.js"></script>
+    <script src="js/data/experienceData.js"></script>
+    <script src="js/data/certificationData.js"></script>
+
+    <script src="js/components/projects.js"></script>
+    <script src="js/components/experience.js"></script>
+    <script src="js/components/certification.js"></script>
+
     <script src="js/main.js"></script>
 </head>
 
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <div class="logo-box">
-                SH
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-box">
+                    SH
+                </div>
+                <span>SalomonHDZ</span>
             </div>
-            <span>SalomonHDZ</span>
-        </div>
 
-        <ul class="nav-links">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#technologies">Technologies</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#articulos">Articulos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <!-- From Uiverse.io by Gautammsharma --> 
-        <div class="app">
-            <div class="card">
-                <div class="card-top">
-                    <div class="glass"></div>
+    <section class="hero"> 
+        <div class="hero-wrapper">
+            <div class="left-panels">
+                <div class="left-panel tech-panel">
+                    <div class="left-expand">
+                        <div class="section">
+                            <div class="title">
+                                Technologies
+                            </div>
+                            <div class="skills-list">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-button tech-button">
+                        ◀
+                    </div>
+                </div>
 
-                    <div class="user">
-                        <div class="info">
-                            <div class="name">Salomón Hernández Velandia</div>
-                            <div class="status">
-                                <span class="dot"></span>
-                                Available for work
+                <div class="left-panel tools-panel">
+                    <div class="left-button tools-button">
+                        ◀
+                    </div>
+                    <div class="left-expand">
+                        <div class="section">
+                            <div class="title">
+                                Tools
+                            </div>
+                            <div class="skills-list">
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD PRINCIPAL -->
+            <div class="app">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="glass"></div>
+
+                        <div class="user">
+                            <div class="info">
+                                <div class="name">Salomón Hernández Velandia</div>
+                                <div class="status">
+                                    <span class="dot"></span>
+                                    Available for work
+                                </div>
+                            </div>
+
+                            <div class="avatar">
+                                <img class="avatar-initial" src="img/Yo_Profesional.jpg">
+                            </div>
+
+                            <div class="meta">
+                                <span> Python Developer | AI | ML </span>  
                             </div>
                         </div>
 
-                        <div class="avatar">
-                            <img class="avatar-initial" src="img/Yo_Profesional.jpg">
+                        <div class="actions">
+                            <button class="btn btn-link"> <i class="fa-brands fa-linkedin-in"></i> </button>
+                            <button class="btn btn-github"> <i class="fa-brands fa-github"></i> </button>
+                            <button class="btn btn-gmail"> <i class="fa-regular fa-envelope"></i> </button>
                         </div>
-
-                        <div class="meta">
-                            <span> Python Developer | AI | ML </span>  
-                        </div>
-                    </div>
-
-                    <div class="actions">
-                        <button class="btn btn-link"> <i class="fa-brands fa-linkedin-in"></i> </button>
-                        <button class="btn btn-github"> <i class="fa-brands fa-github"></i> </button>
-                        <button class="btn btn-gmail"> <i class="fa-regular fa-envelope"></i> </button>
                     </div>
                 </div>
 
-                <div class="card-bottom">➜</div>
-            </div>
-
-            <div class="card-expand">
-                <div class="section">
-                    <div class="title">
-                        About Me
-                    </div>
-                    <div class="text">
-                        Ingeniero Multimedia en proceso de grado
-                        con enfoque en Inteligencia Artificial,
-                        Machine Learning y Computer Vision2.
+                <div class="about-panel">
+                    <div class="card-bottom">➜</div>
+                    <div class="card-expand">
+                        <div class="section">
+                            <div class="title">
+                                About Me
+                            </div>
+                            <div class="text">
+                                Ingeniero Multimedia en proceso de grado
+                                con enfoque en Inteligencia Artificial,
+                                Machine Learning y Computer Vision2.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section> 
 
 
-        <section id="technologies" class="skills">
-            <div class="skills-panel technologies-panel">
-                <div class="skills-row">
-                    <div class="skills-label">
-                        <span>Technologies</span>
+    <section id="projects" class="sections">
+        <div class="sections-header">
+            <div class="sections-title">
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2>Projects</h2>
+            </div>
+            <div class="sections-divider">
+                <span></span>
+            </div>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+    </section>
+
+
+    <section id="experiencia" class="sections">
+        <div class="sections-header">
+            <div class="sections-title">
+                <i class="fa-solid fa-briefcase"></i>
+                <h2>Experiencia</h2>
+            </div>
+            <div class="sections-divider">
+                <span></span>
+            </div>
+        </div>
+
+        <div id="certifications" class="experiences-grid">
+            <div class="glass-lab__card experience-card-test">
+                <div class="experience-card-test">
+                    <div class="experience-header">
+                        <h3>Professional Experience</h3>
+                        <span>2 Positions</span>
                     </div>
+                    <div class="experience-list" id="experience-list"> </div>
+                </div>
+            </div>
+            <div class="glass-lab__card experience-card-test">
+                <div class="resume-card">
+                    <div class="resume-header">
+                        <h3>
+                            <i class="fa-solid fa-file-pdf"></i>
+                            Resume
+                        </h3>
+                        <span>PDF</span>
+                    </div>
+                    <div class="resume-preview">
+                        <iframe
+                            src="assets/pdf/CV_M-Salomon Hernandez Velandia.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH">
+                        </iframe>
+                        <div class="resume-overlay"></div>
+                    </div>
+                    <div class="resume-buttons">
+                        <a
+                            href="assets/pdf/CV_M-Salomon Hernandez Velandia.pdf"
+                            target="_blank"
+                            class="resume-btn read">
 
-                    <div class="slider">
-                        <div class="slide-track">
-                            <!-- Primera vuelta -->
-                            <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-                            <div class="skill"><i class="devicon-matlab-plain colored"></i><span>MATLAB</span></div>
-                            <div class="skill"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
-                            <div class="skill"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
-                            <div class="skill"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
-                            <div class="skill"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
-                            <div class="skill"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
-                            <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-                            <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-                            <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                            <div class="skill"><i class="devicon-sass-original colored"></i><span>Sass</span></div>
-                            <div class="skill"><i class="devicon-react-original colored"></i><span>React</span></div>
-                            <div class="skill"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
-                            <!-- repetir exactamente lo mismo -->
-                            <div class="skill"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-                            <div class="skill"><i class="devicon-matlab-plain colored"></i><span>MATLAB</span></div>
-                            <div class="skill"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
-                            <div class="skill"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
-                            <div class="skill"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
-                            <div class="skill"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
-                            <div class="skill"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
-                            <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-                            <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-                            <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                            <div class="skill"><i class="devicon-sass-original colored"></i><span>Sass</span></div>
-                            <div class="skill"><i class="devicon-react-original colored"></i><span>React</span></div>
-                            <div class="skill"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
-                        </div>
+                            <i class="fa-solid fa-book-open"></i>
+                            Read
+                        </a>
+                        <a
+                            href="assets/pdf/CV_M-Salomon Hernandez Velandia.pdf"
+                            download
+                            class="resume-btn download">
+                            <i class="fa-solid fa-download"></i>
+                            Download
+                        </a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="skills-panel tools-panel">
-                <div class="skills-row">
-                    <div class="skills-label">
-                        <span>Tools</span>
+
+    <section  id="articulos" class="section-father">
+        <section class="sections-son">
+            <div class="sections-header">
+                <div class="sections-title">
+                    <i class="fa-solid fa-award"></i>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="sections-divider">
+                    <span></span>
+                </div>
+            </div>
+            <div class="glass-lab__card certifications-card">
+                <div class="certifications-header">
+                    <h3>
+                        <i class="fa-solid fa-certificate"></i>
+                        Professional Certifications
+                    </h3>
+                    <span>4 Credentials</span>
+                </div>
+                <div
+                    class="certifications-grid"
+                    id="certifications-grid">
+                </div>
+            </div>
+        </section>
+
+        <section class="sections-son">
+            <div class="sections-header">
+                <div class="sections-title">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h2>Articulos</h2>
+                </div>
+                <div class="sections-divider">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="articles-grid">
+                <div class="glass-lab__card experience-card-test">
+                    <div class="resume-card">
+                        <div class="resume-header">
+                            <h3>
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Resume
+                            </h3>
+                            <span>PDF</span>
+                        </div>
+                        <div class="resume-preview">
+                            <iframe
+                                src="assets/pdf/Tesis_SalomonHernandezVelandia.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH">
+                            </iframe>
+                            <div class="resume-overlay"></div>
+                        </div>
+                        <div class="resume-buttons">
+                            <a
+                                href="assets/pdf/Tesis_SalomonHernandezVelandia.pdf"
+                                target="_blank"
+                                class="resume-btn read">
+
+                                <i class="fa-solid fa-book-open"></i>
+                                Read
+                            </a>
+                            <a
+                                href="assets/pdf/Tesis_SalomonHernandezVelandia.pdf"
+                                download
+                                class="resume-btn download">
+                                <i class="fa-solid fa-download"></i>
+                                Download
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <div class="glass-lab__card article-card-test">
+                    <div class="resume-card">
+                        <div class="resume-header">
+                            <h3>
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Resume
+                            </h3>
+                            <span>PDF</span>
+                        </div>
+                        <div class="resume-preview">
+                            <iframe
+                                src="assets/pdf/SIPAIM_Generacion_Imagenes.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH">
+                            </iframe>
+                            <div class="resume-overlay"></div>
+                        </div>
+                        <div class="resume-buttons">
+                            <a
+                                href="assets/pdf/SIPAIM_Generacion_Imagenes.pdf"
+                                target="_blank"
+                                class="resume-btn read">
 
-                    <div class="slider reverse">
-                        <div class="slide-track">
-                            <div class="skill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-                            <div class="skill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
-                            <div class="skill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
-                            <div class="skill"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
-                            <div class="skill"><i class="devicon-powerbi-plain colored"></i><span>Power BI</span></div>
-                            <div class="skill"><i class="devicon-microsoftsqlserver-plain colored"></i><span>Excel</span></div>
-                            <div class="skill"><i class="devicon-moodle-plain colored"></i><span>Moodle</span></div>
-                            <!-- repetir -->
-                            <div class="skill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-                            <div class="skill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
-                            <div class="skill"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
-                            <div class="skill"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
-                            <div class="skill"><i class="devicon-powerbi-plain colored"></i><span>Power BI</span></div>
-                            <div class="skill"><i class="devicon-microsoftsqlserver-plain colored"></i><span>Excel</span></div>
-                            <div class="skill"><i class="devicon-moodle-plain colored"></i><span>Moodle</span></div>
+                                <i class="fa-solid fa-book-open"></i>
+                                Read
+                            </a>
+                            <a
+                                href="assets/pdf/SIPAIM_Generacion_Imagenes.pdf"
+                                download
+                                class="resume-btn download">
+                                <i class="fa-solid fa-download"></i>
+                                Download
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </section>
+
     
-    <!-- <header>
+    
+    <div class="glass-lab__card">
+        <h2>Liquid Crystal</h2>
+        <p>
+            Este es únicamente un laboratorio para probar un material base
+            que luego podría utilizarse en todo el portfolio.
+        </p>
+        <button class="glass-lab__button"> Explore </button>
+    </div>
 
-    </header> -->
-
-    <section id="projects" class="projects">
+    <!-- <section id="projects" class="projects">
         <div class="section-title">
             <h2>Featured Projects</h2>
             <p>
@@ -167,8 +340,7 @@
             </p>
         </div>
         <div id="projects-grid" class="projects-grid"></div>
-    </section>
-
+    </section> -->
 
 </body>
 
