@@ -1,0 +1,226 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+@media (max-width:1200px){
+
+.hero-wrapper{
+
+    transform:scale(.90);
+
+}
+
+}
+
+@media (min-width:1201px) and (max-width:1600px){
+
+.hero-wrapper{
+
+    transform:scale(1);
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.hero{
+
+    min-height:100vh;
+
+}
+
+.hero-wrapper{
+
+    margin-top:70px;
+
+}
+
+}
+
+
+@media (min-width:1600px){
+
+.card-top{
+
+    padding:28px 40px;
+
+}
+
+.avatar{
+
+    height:220px;
+
+}
+
+}
+
+
+@media (min-width:1600px){
+
+.name{
+
+    font-size:22px;
+
+}
+
+.status{
+
+    font-size:15px;
+
+}
+
+.meta{
+
+    max-width:280px;
+
+    font-size:15px;
+
+}
+
+}
+
+
+@media (min-width:1600px){
+
+.avatar{
+
+    width:72%;
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.btn{
+
+    padding:8px 32px;
+
+    font-size:14px;
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.left-panel:hover .left-button{
+
+    transform:translateX(-450px);
+
+}
+
+.left-panel:hover .left-expand{
+
+    width:450px;
+
+}
+
+.left-expand .section{
+
+    width:450px;
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.about-panel:hover .card-bottom{
+
+    transform:translateX(560px);
+
+}
+
+.about-panel:hover .card-expand{
+
+    width:560px;
+
+}
+
+.section{
+
+    width:560px;
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.title{
+
+    font-size:22px;
+
+}
+
+.text{
+
+    font-size:15px;
+
+    line-height:1.75;
+
+}
+
+}
+
+@media (min-width:1600px){
+
+.tech-item i{
+
+    font-size:36px;
+
+}
+
+.item-main i{
+
+    font-size:48px;
+
+}
+
+.item-last i{
+
+    font-size:26px;
+
+}
+
+.tech-item img{
+
+    width:36px;
+
+    height:36px;
+
+}
+
+}
+
+@media (min-width:1900px){
+
+.hero-wrapper{
+
+    transform:scale(1.18);
+
+}
+
+}
+
+@media (min-width:2560px){
+
+.hero-wrapper{
+
+    transform:scale(1.35);
+
+}
+
+}
+
+@media (min-width:3400px){
+
+.hero-wrapper{
+
+    transform:scale(1.55);
+
+}
+
+}
+

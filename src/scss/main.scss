@@ -24,5 +24,9 @@
 @use "layout/experience";
 @use "layout/certification";
 @use "layout/articles";
-// @use "layout/contact";
 @use "layout/footer";
+
+@use "responsive/breakpoints";
+@use "responsive/respnavbar";
+@use "responsive/respcard";
+// @use "responsive/projects";

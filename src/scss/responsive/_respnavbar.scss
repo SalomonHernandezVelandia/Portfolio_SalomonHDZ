@@ -1,0 +1,149 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+
+@media (max-width:1200px){
+    .navbar{
+        padding:0 35px;
+    }
+
+    .logo{
+        font-size:16px;
+    }
+
+    .nav-links{
+        gap:8px;
+    }
+
+    .nav-links a{
+        padding:8px 12px;
+        font-size:13px;
+    }
+}
+
+@media (max-width:1024px){
+    .navbar{
+        padding:0 20px;
+    }
+
+    .logo span{
+        display:none;
+    }
+
+    .nav-links{
+        gap:5px;
+    }
+
+    .nav-links a{
+        padding:7px 10px;
+        font-size:12px;
+    }
+}
+
+
+@media (max-width:768px){
+    .menu-toggle{
+        display:flex;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:60px;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        gap:0;
+        background:$back-nav;
+        backdrop-filter:blur(30px);
+        padding:25px 0;
+        transform:translateY(-150%);
+        transition:.35s;
+    }
+
+    .nav-links.active{
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+    .nav-actions{
+        margin-left:auto;
+        margin-right:20px;
+    }
+    }
+
+    @media(max-width:576px){
+    .navbar{
+        height:55px;
+        padding:0 16px;
+    }
+
+    .logo{
+        gap:8px;
+    }
+
+    .logo-box{
+        transform:scale(.9);
+    }
+
+    .themeToggle{
+        width:18px;
+    }
+}
+
+@media(max-width:430px){
+    .navbar{
+        padding:0 14px;
+    }
+
+    .logo{
+        font-size:15px;
+    }
+
+    .themeToggle{
+        width:17px;
+    }
+}
+
+@media(max-width:375px){
+    .navbar{
+        padding:0 10px;
+    }
+
+    .logo-box{
+        transform:scale(.8);
+    }
+}
+
+.menu-toggle{
+    display:none;
+    width:34px;
+    height:34px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    position:relative;
+}
+
+.menu-toggle span{
+    position:absolute;
+    left:5px;
+    width:24px;
+    height:2px;
+    background:white;
+    transition:.35s;
+}
+
+.menu-toggle span:nth-child(1){
+    top:9px;
+}
+
+.menu-toggle span:nth-child(2){
+    top:16px;
+}
+
+.menu-toggle span:nth-child(3){
+    top:23px;
+}
+

@@ -1501,5 +1501,238 @@ Resume Card
     align-items: center;
   }
 }
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 35px;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  .nav-links {
+    gap: 8px;
+  }
+  .nav-links a {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .logo span {
+    display: none;
+  }
+  .nav-links {
+    gap: 5px;
+  }
+  .nav-links a {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background: rgba(20, 20, 20, 0.3);
+    backdrop-filter: blur(30px);
+    padding: 25px 0;
+    transform: translateY(-150%);
+    transition: 0.35s;
+  }
+  .nav-links.active {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .nav-actions {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar {
+    height: 55px;
+    padding: 0 16px;
+  }
+  .logo {
+    gap: 8px;
+  }
+  .logo-box {
+    transform: scale(0.9);
+  }
+  .themeToggle {
+    width: 18px;
+  }
+}
+@media (max-width: 430px) {
+  .navbar {
+    padding: 0 14px;
+  }
+  .logo {
+    font-size: 15px;
+  }
+  .themeToggle {
+    width: 17px;
+  }
+}
+@media (max-width: 375px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  .logo-box {
+    transform: scale(0.8);
+  }
+}
+.menu-toggle {
+  display: none;
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-toggle span {
+  position: absolute;
+  left: 5px;
+  width: 24px;
+  height: 2px;
+  background: white;
+  transition: 0.35s;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 9px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 16px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 23px;
+}
+
+@media (max-width: 1200px) {
+  .hero-wrapper {
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .hero-wrapper {
+    transform: scale(1);
+  }
+}
+@media (min-width: 1600px) {
+  .hero {
+    min-height: 100vh;
+  }
+  .hero-wrapper {
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1600px) {
+  .card-top {
+    padding: 28px 40px;
+  }
+  .avatar {
+    height: 220px;
+  }
+}
+@media (min-width: 1600px) {
+  .name {
+    font-size: 22px;
+  }
+  .status {
+    font-size: 15px;
+  }
+  .meta {
+    max-width: 280px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1600px) {
+  .avatar {
+    width: 72%;
+  }
+}
+@media (min-width: 1600px) {
+  .btn {
+    padding: 8px 32px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1600px) {
+  .left-panel:hover .left-button {
+    transform: translateX(-450px);
+  }
+  .left-panel:hover .left-expand {
+    width: 450px;
+  }
+  .left-expand .section {
+    width: 450px;
+  }
+}
+@media (min-width: 1600px) {
+  .about-panel:hover .card-bottom {
+    transform: translateX(560px);
+  }
+  .about-panel:hover .card-expand {
+    width: 560px;
+  }
+  .section {
+    width: 560px;
+  }
+}
+@media (min-width: 1600px) {
+  .title {
+    font-size: 22px;
+  }
+  .text {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+}
+@media (min-width: 1600px) {
+  .tech-item i {
+    font-size: 36px;
+  }
+  .item-main i {
+    font-size: 48px;
+  }
+  .item-last i {
+    font-size: 26px;
+  }
+  .tech-item img {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (min-width: 1900px) {
+  .hero-wrapper {
+    transform: scale(1.18);
+  }
+}
+@media (min-width: 2560px) {
+  .hero-wrapper {
+    transform: scale(1.35);
+  }
+}
+@media (min-width: 3400px) {
+  .hero-wrapper {
+    transform: scale(1.55);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
