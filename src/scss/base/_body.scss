@@ -13,8 +13,130 @@ html{
 }
 
 body{
-    font-family:"Manrope",sans-serif;
-    background: $body-night;
-    // background: radial-gradient(circle at top,#0F1724, #070A0F 70%);
+    position:relative;
+    min-height:100vh;
     overflow-x:hidden;
+    font-family:"Manrope",sans-serif;
+    background:$body-night;
 }
+
+//==============================================
+// METEORITOS
+//==============================================
+
+// body::before,
+// body::after{
+
+//     content:"";
+//     position:fixed;
+
+//     inset:0;
+
+//     pointer-events:none;
+
+//     z-index:-1;
+
+// }
+// body::before{
+
+//     background:
+//         linear-gradient(
+//             -35deg,
+//             transparent 0%,
+//             rgba($gold-light,.95) 48%,
+//             rgba($gold,.65) 52%,
+//             transparent 100%
+//         );
+
+//     width:180px;
+//     height:2px;
+
+//     border-radius:999px;
+
+//     box-shadow:
+
+//         8vw 15vh 0 rgba($gold-light,.85),
+//         22vw 60vh 0 rgba($gold-light,.6),
+//         36vw 28vh 0 rgba($gold-light,.7),
+//         54vw 82vh 0 rgba($gold-light,.8),
+//         72vw 18vh 0 rgba($gold-light,.55),
+//         88vw 55vh 0 rgba($gold-light,.7);
+
+//     animation:
+//         meteorGold 18s linear infinite;
+
+//     opacity:.45;
+
+// }
+// body::after{
+
+//     background:
+//         linear-gradient(
+//             -35deg,
+//             transparent,
+//             rgba($esmerald-light,.95),
+//             rgba($esmerald,.55),
+//             transparent
+//         );
+
+//     width:140px;
+//     height:2px;
+
+//     border-radius:999px;
+
+//     box-shadow:
+
+//         15vw 35vh 0 rgba($esmerald-light,.8),
+//         28vw 78vh 0 rgba($esmerald-light,.55),
+//         46vw 12vh 0 rgba($esmerald-light,.7),
+//         66vw 48vh 0 rgba($esmerald-light,.6),
+//         84vw 90vh 0 rgba($esmerald-light,.8);
+
+//     animation:
+//         meteorGreen 24s linear infinite;
+
+//     opacity:.35;
+
+// }
+// @keyframes meteorGold{
+
+//     from{
+
+//         transform:
+//             translate(40vw,-45vh)
+//             rotate(-35deg);
+
+//     }
+
+//     to{
+
+//         transform:
+//             translate(-60vw,120vh)
+//             rotate(-35deg);
+
+//     }
+
+// }
+
+// @keyframes meteorGreen{
+
+//     from{
+
+//         transform:
+//             translate(65vw,-35vh)
+//             rotate(-35deg);
+
+//     }
+
+//     to{
+
+//         transform:
+//             translate(-75vw,125vh)
+//             rotate(-35deg);
+
+//     }
+
+// }
+
+
+

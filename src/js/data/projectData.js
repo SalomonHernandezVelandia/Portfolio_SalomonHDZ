@@ -80,7 +80,7 @@ const projects = [
         title:"Echocardiogram Image Generation using Generative Learning Strategies.",
         description:"This work was developed as a thesis project and extends previous research published at SIPAIM (IEEE), exploring multiple generative architectures for synthetic echocardiographic image generation using Generative Learning.",
         gif:"gifs/generated_stylegan.gif",
-        github:"#",
+        github:"https://github.com/SalomonHernandezVelandia/EchocardiogramGenerator",
         demo:"#",
         technologies:[
             { name:"Python", level:100, percentage:true},
@@ -95,8 +95,8 @@ const projects = [
     {
         title: "Crypto Trading Dashboard & Signal Engine",
         description: "Este proyecto es una plataforma de análisis de mercado cripto que combina datos históricos, métricas en tiempo real y lógica cuantitativa para generar señales de compra y venta.",
-        gif: "gifs/crypto.gif",
-        github: "#",
+        gif: "img/projects/Learning_English.jpg",
+        github: "https://github.com/SalomonHernandezVelandia/CRYPTO-platform",
         demo: "#",
         technologies:[
             { name:"Python", level:100, percentage:true},
@@ -109,8 +109,8 @@ const projects = [
     {
         title: "Proyecto aprendizaje del Vocabulario Ingles con Python",
         description: "Program designed to teach English through a small, interactive game with a graphical interface. The system allows the user to enter words, which are then automatically analyzed and scored, providing immediate feedback to support the learning process.",
-        gif: "gifs/crypto.gif",
-        github: "#",
+        gif: "img/projects/Crypto_platform.jpg",
+        github: "https://github.com/SalomonHernandezVelandia/LearningVocabularyEnglish_ConInterfaz",
         demo: "#",
         technologies:[
             { name:"Python", level:100, percentage:true},

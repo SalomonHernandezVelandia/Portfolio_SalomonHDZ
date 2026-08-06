@@ -19,6 +19,9 @@
         inset 0 1px rgba(255,255,255,.12),
         0 0 1px rgba(255,255,255,.25);
     z-index:9999;
+    a {
+        text-decoration: none;
+    }
 }
 
 .logo{
@@ -59,7 +62,7 @@
         transition:.35s;
         color:rgba(255,255,255,.78);
         text-decoration:none;
-        font-size:15px;
+        font-size:14px;
         transition:.25s;
     }
     a:hover{
@@ -95,3 +98,121 @@
     }
 }
 
+.nav-actions{
+    display:flex;
+    align-items:center;
+    margin-left:24px;
+}
+
+
+// Toggle Modo Dark y Light
+.themeToggle{
+    width:20px;
+    color:$esmerald;
+    transition:
+        color .45s ease,
+        filter .45s ease;
+}
+
+.st-sunMoonThemeToggleBtn {
+    position: relative;
+    cursor: pointer;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput {
+    opacity: 0;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.st-sunMoonThemeToggleBtn svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+    transform: rotate(40deg);
+}
+
+.st-sunMoonThemeToggleBtn svg .sunMoon{
+    transform-origin:center center;
+    transition:
+        transform .45s ease,
+        filter .45s ease,
+        fill .45s ease;
+    fill:currentColor;
+    transform:scale(1);
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay{
+    transform-origin:center center;
+    transform:scale(0);
+    fill:currentColor;
+    filter:
+        drop-shadow(0 0 4px rgba($esmerald,.4))
+        drop-shadow(0 0 8px rgba($esmerald,.3));
+}
+
+.st-sunMoonThemeToggleBtn svg mask > circle {
+  transition: transform 0.64s cubic-bezier(0.41, 0.64, 0.32, 1.575);
+  transform: translate(0px, 0px);
+}
+
+.st-sunMoonThemeToggleBtn svg .sunRay2 {
+  animation-delay: 0.05s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay3 {
+  animation-delay: 0.1s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay4 {
+  animation-delay: 0.17s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay5 {
+  animation-delay: 0.25s !important;
+}
+.st-sunMoonThemeToggleBtn svg .sunRay6{
+    animation-delay:.29s !important;
+}
+
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg {
+  transform: rotate(90deg);
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg mask > circle {
+  transform: translate(16px, -3px);
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunMoon {
+  transform: scale(0.55);
+}
+.st-sunMoonThemeToggleBtn .themeToggleInput:checked + svg .sunRay {
+  animation: showRay1832 0.4s ease 0s 1 forwards;
+}
+
+.st-sunMoonThemeToggleBtn
+.themeToggleInput:checked{
+    & + svg{
+        color:$gold;
+        .sunMoon{
+            filter:
+                drop-shadow(0 0 5px rgba($gold,.55))
+                drop-shadow(0 0 12px rgba($gold,.45));
+        }
+        .sunRay{
+            filter:
+                drop-shadow(0 0 4px rgba($gold,.45))
+                drop-shadow(0 0 8px rgba($gold,.35));
+        }
+    }
+}
+
+.themeToggle:has(.themeToggleInput:checked){
+    color:$gold;
+}
+
+@keyframes showRay1832 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
