@@ -1,7 +1,7 @@
 const experiences = [
     {
-        company: "Company Name",
-        logo: "img/company1.png",
+        company: "Universidad Nacional de Colombia",
+        logo: "img/logo/logo_UNAL_only.png",
         position: "Python Developer",
         start: "Jan 2024",
         end: "Present",
@@ -10,8 +10,8 @@ const experiences = [
     },
 
     {
-        company: "Universidad Nacional de Colombia",
-        logo: "img/unal.png",
+        company: "Bilingual Child Care University",
+        logo: "img/logo/logoUniversity-Blanco.png",
         position: "Research Assistant",
         start: "Jul 2023",
         end: "Dec 2023",
@@ -19,13 +19,4 @@ const experiences = [
         description:"Research on GAN architectures for synthetic echocardiographic image generation."
     },
 
-    {
-        company: "Universidad Nacional de Colombia",
-        logo: "img/unal.png",
-        position: "Research Assistant",
-        start: "Jul 2023",
-        end: "Dec 2023",
-        status: "Research",
-        description:"Research on GAN architectures for synthetic echocardiographic image generation."
-    }
 ];

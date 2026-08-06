@@ -1,0 +1,55 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+
+
+.btn-main {
+    height: 25px;
+    width: 150px;
+    border: none;
+    border-radius: 40px;
+    text-decoration:none;
+    background: linear-gradient(to right,$gold-darky,$gold-light,$gold-darky,$gold-light,$gold-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgb(121, 103, 3);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition-duration: 3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+    background-size: 200% 200%;
+}
+.btn-main:hover {
+  transform: scale(0.95);
+  transition-duration: 3s;
+  animation: gradient 5s ease infinite;
+  background-position: right;
+}
+.btn-main svg{
+    width:18px;
+    height:18px;
+    fill:currentColor;
+}
+
+
+.btn-github-main{
+    background:linear-gradient(to right, $github, $github-light, $github-dark, $github-light, $github);
+    background-size:200% 200%;
+    background-position:left;
+    color:$white;
+}
+.btn-github-main .logoIcon path{
+    fill: $white;
+}
+
+.btn-esmerald {
+    background:linear-gradient(to right, $esmerald, $esmerald-light, $esmerald-dark, $esmerald-light, $esmerald);
+    background-size:200% 200%;
+    background-position:left;
+    color:$esmerald-dark;
+}

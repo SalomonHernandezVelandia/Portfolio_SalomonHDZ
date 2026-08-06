@@ -1,41 +1,33 @@
-$gold: #D4AF37;
-$gold-light:#fbf5b7;
-$gold-darky:#b38728;
-$gold-dark:#aa771c;
-$gold-darksidian:#332103;
-
+$white:#FFF;
 
 $gold-50:  #FFFDF2;
 $gold-100: #FFF7D6;
-$gold-200: #FBEAA2;
+$gold-light:#fbf5b7;
 $gold-300: #F2D76A;
 $gold-400: #E3C14D;
+$gold: #D4AF37;
+$gold-darky:#b38728;
+$gold-dark:#aa771c;
+$gold-800: #5c430d;
+$gold-darksidian: #281c04;
 
-$gold-500: #D4AF37;
+$esmerald-50: #F1FFFB;
+$esmerald-100:#D6FFF4;
+$esmerald-200:#9DFFE4;
+$esmerald-light:#66FFD8;
+$esmerald-400:#22D8AA;
+$esmerald:#00C896;
+$esmerald-600:#00A67B;
+$esmerald-700:#007A5A;
+$esmerald-dark:#00543E;
+$esmerald-900:#002C22;
+$esmerald-superdark:#001913;
 
-$gold-600: #B88F22;
-$gold-700: #8F6C18;
-$gold-800: #664B0F;
-$gold-900: #332406;
-
-
-$emerald:#00C896;
-$emerald-light:#66FFD8;
-$emerald-dark:#007D63;
-
-
-$emerald-50: #F1FFFB;
-$emerald-100:#D6FFF4;
-$emerald-200:#9DFFE4;
-$emerald-300:#5CF2C8;
-$emerald-400:#22D8AA;
-
-$emerald-500:#00C896;
-
-$emerald-600:#00A67B;
-$emerald-700:#007A5A;
-$emerald-800:#00543E;
-$emerald-900:#002C22;
+$linkeIn:#0E76A8;
+$github-light:#8290dc;
+$github:#5C6BC0;
+$github-dark:#3d337e;
+$gmail:#F44336;
 
 
 $body-night:#0D1117;
@@ -44,16 +36,14 @@ $body-night:#0D1117;
 $background:#070A0F;
 $background-light:#0B1220;
 
-$white:#FFF;
+$back-nav:rgba(20,20,20,.30);
 
 $text:rgba(255,255,255,.94);
 $text-secondary:rgba(255,255,255,.72);
 $text-disabled:rgba(255,255,255,.45);
+$back-disabled:rgba(255,255,255,.03);
 
 
-$az3:rgba(0, 142, 236, 0.815);
-$pur3:rgba(68, 0, 156, 0.815);
-$rd:rgba(156, 0, 0, 0.815);
 
 
 
@@ -61,11 +51,4 @@ $purple-light:rgba(168,85,247,.95);
 $purple-dark:rgba(168,85,247,.25);
 $orange-light:rgba(249,115,22,.95);
 $orange-dark:rgba(249,115,22,.25);
-
-
-$az:rgb(61, 106, 255);
-$az2:#0E76A8;
-
-$pur:rgba(146, 1, 219);
-$pur2:#5C6BC0;
 

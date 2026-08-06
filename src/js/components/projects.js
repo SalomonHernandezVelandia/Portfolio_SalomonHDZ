@@ -46,11 +46,11 @@ function createProjectCard(project){
                         ${generateTechStack(project.technologies)}
                     </div>
                     <div class="project-buttons">
-                        <a href="${project.github}" target="_blank" class="btn-github-main">
+                        <a href="${project.github}" target="_blank" class="btn-main btn-github-main">
                             ${githubIcon()}
                             <span>GitHub</span>
                         </a>
-                        <a href="${project.demo}" target="_blank" class="btn-demo">
+                        <a href="${project.demo}" target="_blank" class="btn-main">
                             ${playIcon()}
                             <span>Live Demo</span>
                         </a>

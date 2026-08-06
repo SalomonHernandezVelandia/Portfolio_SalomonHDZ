@@ -1,41 +1,77 @@
 const TECHNOLOGY_COLORS = {
-
+    // Lenguajes
     Python:"#3776AB",
     JavaScript:"#F7DF1E",
-    TypeScript:"#3178C6",
-    HTML:"#E34F26",
-    CSS:"#1572B6",
-    Sass:"#CC6699",
-
-    TensorFlow:"#FF6F00",
-    PyTorch:"#EE4C2C",
-
+    TypeScript:"#3F51B5",
+    Java:"#D35400",
+    "C++":"#777BB4",
+    C:"#7B1FA2",
+    PHP:"#6C63FF",
+    Go:"#00BCD4",
+    Rust:"#8D6E63",
+    R:"#4A90E2",
+    // Inteligencia Artificial
+    TensorFlow:"#FB8C00",
+    PyTorch:"#F4511E",
+    "Skit-Learn":"#FFA000",
+    OpenCV:"#7E57C2",
+    XGBoost:"#EF6C00",
+    LightGBM:"#7CB342",
+    CatBoost:"#FDD835",
+    HuggingFace:"#FBC02D",
+    LangChain:"#009688",
+    OpenAI:"#00897B",
+    // Ciencia de Datos
     Pandas:"#150458",
-    NumPy:"#4DABCF",
-    Matplotlib:"#11557C",
-    Scikit:"#F7931E",
-
+    NumPy:"#4F6BD9",
+    Matplotlib:"#1E88E5",
+    Seaborn:"#5C6BC0",
+    Plotly:"#455A64",
+    SciPy:"#5C6BC0",
+    Polars:"#BF6D28",
+    // Backend
     Django:"#092E20",
-    Flask:"#FFFFFF",
-    FastAPI:"#009688",
-
-    React:"#61DAFB",
-    Vue:"#42B883",
+    Flask:"#424242",
+    FastAPI:"#00897B",
+    "Node.js":"#2E7D32",
+    Express:"#616161",
+    "Spring Boot":"#689F38",
+    Laravel:"#E53935",
+    // Desarrollo Web
+    HTML:"#E34F26",
+    CSS:"#1565C0",
+    Sass:"#C2185B",
+    React:"#26C6DA",
+    Vue:"#43A047",
     Angular:"#DD0031",
-
-    Docker:"#2496ED",
-
-    SQL:"#336791",
-    PostgreSQL:"#4169E1",
-    MySQL:"#4479A1",
-
-    Git:"#F05032",
-    Linux:"#FCC624",
-
-    C:"#00599C",
-    "C++":"#00599C",
-    Java:"#ED8B00",
-
+    "Next.js":"#212121",
+    Nuxt:"#00C853",
+    Tailwind:"#00ACC1",
+    Bootstrap:"#5E35B1",
+    // Bases de Datos
+    SQL:"#546E7A",
+    PostgreSQL:"#1565C0",
+    MySQL:"#0277BD",
+    SQlite:"#006064",
+    MongoDB:"#388E3C",
+    Redis:"#C62828",
+    // DevOps
+    Docker:"#0288D1",
+    Kubernetes:"#3949AB",
+    Git:"#E64A19",
+    GitHub:"#212121",
+    GitLab:"#EF6C00",
+    Bash:"#558B2F",
+    Linux:"#FBC02D",
+    // Power Bi
+    "Power BI":"#F9A825",
+    Excel:"#2E7D32",
+    Tableau:"#FB8C00",
+    // Cloud
+    AWS:"#FF9800",
+    Azure:"#1976D2",
+    "Google Cloud":"#42A5F5",
+    Firebase:"#FBC02D"
 };
 
 

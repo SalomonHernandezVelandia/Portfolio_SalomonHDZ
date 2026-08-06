@@ -1,6 +1,7 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 
+
 .experiences-grid{
     display:grid;
     grid-template-columns:60% 40%;
@@ -8,7 +9,7 @@
 }
 
 .experience-card-test{
-    height:550px;
+    height:500px;
     display:flex;
     flex-direction:column;
 }
@@ -17,7 +18,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 25px;
+    padding: 15px 25px;
     border-radius:22px 22px 0 0;
     background:rgba(255,255,255,.04);
     border-bottom:1px solid rgba($gold,.18);
@@ -28,10 +29,9 @@
         display:flex;
         align-items:center;
         gap:12px;
-
-        color:$white;
-        font-size:20px;
-        font-weight:600;
+        color:$gold;
+        font-size:$font-l;
+        font-weight:$font-bolt;
     }
     span{
         color:$gold-light;
@@ -51,16 +51,13 @@
 .experience-list::-webkit-scrollbar{
     width:7px;
 }
-
 .experience-list::-webkit-scrollbar-track{
     background:transparent;
 }
-
 .experience-list::-webkit-scrollbar-thumb{
     background:rgba($gold,.35);
     border-radius:20px;
 }
-
 .experience-list::-webkit-scrollbar-thumb:hover{
     background:$gold;
 }
@@ -69,12 +66,11 @@
     display:flex;
     gap:18px;
     padding:15px;
-    border-radius:18px;
-    background:rgba(255,255,255,.03);
+    border-radius:$radius-card;
+    background:$back-disabled;
     border:1px solid rgba(255,255,255,.05);
     transition:.35s;
 }
-
 .experience-item:hover{
     transform:translateX(8px);
     border-color:rgba($gold,.5);
@@ -82,33 +78,41 @@
 }
 
 .experience-logo{
-    width:50px;
+    width: 50px;
     height:50px;
     flex-shrink:0;
-    border-radius:16px;
     overflow:hidden;
-    background:white;
-}
-
-.experience-logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+    img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+    }
 }
 
 .experience-content{
     flex:1;
+    h5{
+        color:$esmerald;
+        font-size:12px;
+        margin-bottom:10px;
+        font-weight:500;
+    }
+        p{
+        color:$text-secondary;
+        font-size:12px;
+        line-height:1.7;
+        margin: 0;
+    }
 }
 
 .experience-top{
     display:flex;
     justify-content:space-between;
     align-items:center;
-}
-
-.experience-top h4{
-    color:$white;
-    font-size:14px;
+    h4{
+        color:$white;
+        font-size:14px;
+    }
 }
 
 .experience-date{
@@ -116,21 +120,6 @@
     font-size:10px;
     white-space:nowrap;
 }
-
-.experience-content h5{
-    color:$emerald;
-    font-size:12px;
-    margin-bottom:10px;
-    font-weight:500;
-}
-
-.experience-content p{
-    color:$text-secondary;
-    font-size:12px;
-    line-height:1.7;
-    margin: 0;
-}
-
 
 
 /*==========================
@@ -142,38 +131,10 @@ Resume Card
     height:100%;
 }
 
-.resume-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 25px;
-    border-radius:22px 22px 0 0;
-    background:rgba(255,255,255,.04);
-    border-bottom:1px solid rgba($gold,.18);
-    box-shadow:
-        0 12px 25px rgba(0,0,0,.35),
-        inset 0 1px 0 rgba(255,255,255,.08);
-    h3 {
-        display:flex;
-        align-items:center;
-        gap:12px;
-        color:$white;
-        font-size:20px;
-    }
-    i{
-        color:$gold;
-    }
-    span{
-        color:$gold-light;
-        font-size:13px;
-    }
-}
-
 .resume-preview{
     position:relative;
     flex:1;
     overflow:hidden;
-    background:#222;
     iframe{
         width:100%;
         height:100%;
@@ -196,45 +157,8 @@ Resume Card
 
 .resume-buttons{
     display:flex;
-    gap:15px;
-    margin-top: 15px;
-}
-
-.resume-btn{
-    flex:1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: space-between;
     gap:10px;
-    height:48px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.35s;
 }
 
-.resume-btn.read{
-    background:rgba($emerald,.12);
-    color:$emerald-light;
-    border:1px solid rgba($emerald,.35);
-}
-
-.resume-btn.read:hover{
-    background:$emerald;
-    color:white;
-    box-shadow:
-        0 0 25px rgba($emerald,.35);
-}
-
-.resume-btn.download{
-    background:rgba($gold,.10);
-    color:$gold-light;
-    border:1px solid rgba($gold,.35);
-}
-
-.resume-btn.download:hover{
-    background:$gold;
-    color:#111;
-    box-shadow: 0 0 25px rgba($gold,.35);
-}
 

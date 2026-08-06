@@ -1,10 +1,10 @@
 const certifications = [
 
     {
-        title:"Machine Learning Specialization",
+        title:"Supervised Machine Learning: Regression and Classification",
         organization:"Stanford Online",
         logo:"img/Stanford_Logo.png",
-        date:"2025",
+        date:"2024",
         badge:"Certificate",
         type:"certificate",
         preview:"img/Certificate_ML1.jpg",
@@ -17,16 +17,16 @@ const certifications = [
         organization:"IEEE",
         logo:"img/SIPAIM_2026.png",
         date:"2025",
-        badge:"Speaker",
-        type:"speaker",
+        badge:"Speaker", 
+        type:"speaker", // Publication
         preview:"img/Certificate_SIPAIM.jpg",
         resourceType:"pdf",
         resource:"assets/pdf/Certificate_SIPAIM_SalomonHernandezVelandia.pdf",
         verify:null
     },
     {
-        title:"CCC 2025",
-        organization:"Congreso Colombiano de Computación",
+        title:"Congreso Colombiano de Computación 2025",
+        organization:"Universidad Militar Nueva Granada",
         logo:"img/CCC_Logo.jfif",
         date:"2025",
         badge:"Speaker",
@@ -37,7 +37,7 @@ const certifications = [
         verify:null
     },
     {
-        title:"Deep Learning",
+        title:"Advanced Learning Algorithms",
         organization:"Stanford Online",
         logo:"img/Stanford_Logo.png",
         date:"2025",
