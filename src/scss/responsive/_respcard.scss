@@ -3,6 +3,10 @@
 
 
 @media(max-width:390px){
+    .hero{
+        min-height:80vh;
+    }
+
     .hero-wrapper{
         margin-top: 0px;
     }

@@ -97,7 +97,7 @@ body {
 }
 
 .section-father {
-  width: min(1400px, 70%);
+  width: min(2560px, 70%);
   margin: 100px auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -109,7 +109,7 @@ body {
 }
 
 .sections {
-  width: min(1400px, 70%);
+  width: min(2560px, 70%);
   margin: 20px auto 100px;
   scroll-margin-top: 60px;
 }
@@ -128,7 +128,7 @@ body {
   color: #b38728;
 }
 .sections-title h2 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 600;
   color: #b38728;
   letter-spacing: 1px;
@@ -169,7 +169,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-size: 12px;
+  font-size: 15px;
   color: rgb(121, 103, 3);
   font-weight: 600;
   cursor: pointer;
@@ -967,20 +967,20 @@ body {
 .project-content h3 {
   color: #FFF;
   height: 30px;
-  font-size: 15px;
+  font-size: 21px;
   font-weight: 600;
 }
 .project-content p {
   color: #FFF;
   height: 45px;
-  font-size: 11px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 .project-media {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 200px;
   overflow: hidden;
 }
 .project-media img {
@@ -1004,7 +1004,7 @@ body {
   border-radius: 0.25rem;
   text-transform: uppercase;
   height: 20px;
-  font-size: 7px;
+  font-size: 11px;
   color: #FFF;
   padding-left: 5px;
   padding-right: 10px;
@@ -1036,7 +1036,7 @@ body {
   position: relative;
   z-index: 2;
   color: var(--tech-color);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -1552,8 +1552,6 @@ Resume Card
   .nav-links.active {
     transform: translateY(0);
   }
-}
-@media (max-width: 768px) {
   .nav-actions {
     margin-left: auto;
     margin-right: 20px;
@@ -1625,6 +1623,9 @@ Resume Card
 }
 
 @media (max-width: 390px) {
+  .hero {
+    min-height: 80vh;
+  }
   .hero-wrapper {
     margin-top: 0px;
   }
@@ -1790,7 +1791,7 @@ Resume Card
   left: 50%;
   top: 50%;
   transform: translate(-50%, -40%);
-  width: 92%;
+  width: 88%;
   max-width: 520px;
   max-height: 80vh;
   overflow: auto;
@@ -1875,6 +1876,109 @@ Resume Card
 
 .mobile-panel span {
   font-size: 11px;
+}
+
+@media (max-width: 1366px) {
+  .sections {
+    width: 92%;
+  }
+  .main-content {
+    grid-template-columns: 320px 1fr;
+  }
+  .project-media {
+    height: 220px;
+  }
+}
+@media (max-width: 1024px) {
+  .sections {
+    width: 95%;
+  }
+  .main-content {
+    grid-template-columns: 260px 1fr;
+  }
+  .project-media {
+    height: auto;
+  }
+  .project-content {
+    padding: 18px 22px;
+  }
+  .project-content h3 {
+    height: 45px;
+    font-size: 18px;
+  }
+  .project-content p {
+    height: 45px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 220px 1fr;
+  }
+  .project-content {
+    padding: 16px;
+  }
+  .project-buttons {
+    gap: 12px;
+  }
+  .tech-pill {
+    font-size: 9px;
+  }
+  .tech-pill small {
+    font-size: 7px;
+  }
+}
+@media (max-width: 576px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .project-media {
+    height: 200px;
+  }
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-content {
+    padding: 20px;
+    gap: 14px;
+  }
+  .project-content h3 {
+    height: auto;
+    font-size: 22px;
+  }
+  .project-content p {
+    height: auto;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .tech-stack {
+    height: auto;
+    gap: 8px;
+  }
+  .project-buttons {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  .btn-main {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 430px) {
+  .project-media {
+    height: 170px;
+  }
+  .project-content {
+    padding: 15px;
+  }
+  .project-content h3 {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

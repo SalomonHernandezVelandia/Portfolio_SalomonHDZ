@@ -1,0 +1,133 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+
+@media (max-width:1366px){
+    .sections{
+        width:92%;
+    }
+
+    .main-content{
+        grid-template-columns:320px 1fr;
+    }
+
+    .project-media{
+        height:220px;
+    }
+}
+
+
+@media (max-width:1024px){
+    .sections{
+        width:95%;
+    }
+
+    .main-content{
+        grid-template-columns:260px 1fr;
+    }
+
+    .project-media{
+        height:auto;
+    }
+
+    .project-content{
+        padding:18px 22px;
+        h3{
+            height: 45px;
+            font-size:$font-l;
+        }
+        p{
+            height: 45px;
+            font-size:$font-s;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+    .main-content{
+        grid-template-columns:220px 1fr;
+    }
+
+    .project-content{
+        padding:16px;
+    }
+
+    .project-buttons{
+        gap:12px;
+    }
+
+    .tech-pill{
+        font-size:9px;
+        small{
+            font-size: $font-xxs;
+        }
+    }
+}
+
+
+@media(max-width:576px){
+    .main-content{
+        display:flex;
+        flex-direction:column;
+        gap:0;
+    }
+
+    .project-media{
+        height:200px;
+    }
+
+    .project-media img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .project-content{
+        padding:20px;
+        gap:14px;
+    }
+
+    .project-content h3{
+        height:auto;
+        font-size:22px;
+    }
+
+    .project-content p{
+        height:auto;
+        margin:0;
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .tech-stack{
+        height:auto;
+        gap:8px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+        margin-top:5px;
+    }
+
+    .btn-main{
+        width:100%;
+        justify-content:center;
+    }
+}
+
+
+@media(max-width:430px){
+    .project-media{
+        height:170px;
+    }
+
+    .project-content{
+        padding:15px;
+    }
+
+    .project-content h3{
+        font-size:$font-l;
+    }
+
+}
