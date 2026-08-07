@@ -2031,5 +2031,101 @@ Resume Card
     height: 350px;
   }
 }
+@media (max-width: 1024px) {
+  .section-father {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 95%;
+  }
+  .articles-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .article-card-test {
+    height: 520px;
+  }
+  .article-card-test .resume-card {
+    min-height: 0;
+  }
+  .article-card-test .resume-preview {
+    min-height: 0;
+  }
+  .article-card-test .resume-buttons {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 768px) {
+  .certifications-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .certifications-header {
+    padding: 15px 18px;
+  }
+  .certification-preview {
+    height: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+  .certifications-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .certifications-header span {
+    width: auto;
+  }
+  .certification-preview {
+    height: 180px;
+  }
+  .certification-content {
+    padding: 15px;
+  }
+  .certification-top {
+    gap: 10px;
+  }
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+  .article-card-test {
+    height: 430px;
+  }
+  .article-card-test .resume-card {
+    min-height: 0;
+  }
+  .article-card-test .resume-preview {
+    min-height: 0;
+  }
+  .article-card-test .resume-buttons {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 430px) {
+  .certification-preview {
+    height: 150px;
+  }
+  .certification-title {
+    font-size: 12px;
+  }
+  .certification-company {
+    font-size: 11px;
+  }
+  .article-card-test {
+    height: 400px;
+  }
+  .article-card-test .resume-card {
+    min-height: 0;
+  }
+  .article-card-test .resume-preview {
+    min-height: 0;
+  }
+  .article-card-test .resume-buttons {
+    flex-shrink: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
