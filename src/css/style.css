@@ -146,7 +146,7 @@ body {
   position: absolute;
   inset: 0;
   width: 50%;
-  background: linear-gradient(90deg, transparent, #D4AF37, #00B8FF, #D4AF37, #00B8FF, #D4AF37, transparent);
+  background: linear-gradient(90deg, transparent, #D4AF37, #8B3DFF, #D4AF37, #8B3DFF, #D4AF37, transparent);
   animation: dividerMove 5s linear infinite;
 }
 
@@ -205,10 +205,10 @@ body {
 }
 
 .btn-esmerald {
-  background: linear-gradient(to right, #00B8FF, #67D9FF, #005A82, #67D9FF, #00B8FF);
+  background: linear-gradient(to right, #8B3DFF, #C084FF, #421778, #C084FF, #8B3DFF);
   background-size: 200% 200%;
   background-position: left;
-  color: #005A82;
+  color: #421778;
 }
 
 .navbar {
@@ -224,7 +224,7 @@ body {
   background: rgba(20, 20, 20, 0.3);
   backdrop-filter: blur(34px) saturate(220%);
   -webkit-backdrop-filter: blur(34px) saturate(220%);
-  box-shadow: 0 5px 30px #003A54, inset 0 1px rgba(255, 255, 255, 0.12), 0 0 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 5px 30px #2A0D4D, inset 0 1px rgba(255, 255, 255, 0.12), 0 0 1px rgba(255, 255, 255, 0.25);
   z-index: 9999;
 }
 .navbar a {
@@ -241,15 +241,15 @@ body {
 }
 .logo span {
   letter-spacing: 0.8px;
-  color: #00B8FF;
+  color: #8B3DFF;
   font-weight: 600;
 }
 
 .logo-box {
-  background: linear-gradient(135deg, #005A82, #00B8FF, #67D9FF);
+  background: linear-gradient(135deg, #421778, #8B3DFF, #C084FF);
   padding: 3px;
-  border: 1px solid rgba(103, 217, 255, 0.35);
-  box-shadow: 0 0 22px rgba(0, 184, 255, 0.35);
+  border: 1px solid rgba(192, 132, 255, 0.35);
+  box-shadow: 0 0 22px rgba(139, 61, 255, 0.35);
 }
 
 .nav-links {
@@ -278,7 +278,7 @@ body {
   bottom: 6px;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00B8FF, #D4AF37, #00B8FF);
+  background: linear-gradient(90deg, #8B3DFF, #D4AF37, #8B3DFF);
   transform: translateX(-50%);
   transition: 0.35s;
   border-radius: 999px;
@@ -287,7 +287,7 @@ body {
   width: 65%;
 }
 .nav-links a.active {
-  background: rgba(0, 184, 255, 0.12);
+  background: rgba(139, 61, 255, 0.12);
   color: #FFF;
 }
 
@@ -299,7 +299,7 @@ body {
 
 .themeToggle {
   width: 20px;
-  color: #00B8FF;
+  color: #8B3DFF;
   transition: color 0.45s ease, filter 0.45s ease;
 }
 
@@ -334,7 +334,7 @@ body {
   transform-origin: center center;
   transform: scale(0);
   fill: currentColor;
-  filter: drop-shadow(0 0 4px rgba(0, 184, 255, 0.4)) drop-shadow(0 0 8px rgba(0, 184, 255, 0.3));
+  filter: drop-shadow(0 0 4px rgba(139, 61, 255, 0.4)) drop-shadow(0 0 8px rgba(139, 61, 255, 0.3));
 }
 
 .st-sunMoonThemeToggleBtn svg mask > circle {
@@ -435,7 +435,7 @@ body {
   width: 0;
   height: 100%;
   overflow: hidden;
-  background: #003A54;
+  background: #2A0D4D;
   transition: width 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -458,7 +458,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: #001E2C;
+  color: #18072E;
   cursor: pointer;
   border-radius: 26px 0 0 26px;
   z-index: 5;
@@ -476,11 +476,11 @@ body {
 }
 
 .tech-button {
-  background: linear-gradient(to bottom, #005A82, #67D9FF, #00B8FF, #67D9FF, #005A82);
+  background: linear-gradient(to bottom, #421778, #C084FF, #8B3DFF, #C084FF, #421778);
 }
 
 .tools-button {
-  background: linear-gradient(to bottom, #001E2C, #0099D9, #0078AD, #0099D9, #001E2C);
+  background: linear-gradient(to bottom, #18072E, #7226D1, #5A1FA8, #7226D1, #18072E);
 }
 
 .tech-category {
@@ -625,7 +625,7 @@ body {
   position: absolute;
   inset: 0;
   padding: 1.5px;
-  background: linear-gradient(135deg, #00B8FF, #005A82 22%, transparent 45%, transparent 55%, #aa771c 78%, #D4AF37);
+  background: linear-gradient(135deg, #8B3DFF, #421778 22%, transparent 45%, transparent 55%, #aa771c 78%, #D4AF37);
   -webkit-mask: linear-gradient(#FFF 0 0) content-box, linear-gradient(#FFF 0 0);
   mask-composite: exclude;
   pointer-events: none;
@@ -635,7 +635,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 15% 10%, rgba(0, 184, 255, 0.16), transparent 35%), radial-gradient(circle at 85% 90%, rgba(212, 175, 55, 0.14), transparent 40%);
+  background: radial-gradient(circle at 15% 10%, rgba(139, 61, 255, 0.16), transparent 35%), radial-gradient(circle at 85% 90%, rgba(212, 175, 55, 0.14), transparent 40%);
   pointer-events: none;
 }
 
@@ -643,7 +643,7 @@ body {
 .glass {
   position: absolute;
   inset: 0;
-  background: radial-gradient(240px 140px at var(--x, 30%) var(--y, 10%), rgba(103, 217, 255, 0.18), transparent 70%);
+  background: radial-gradient(240px 140px at var(--x, 30%) var(--y, 10%), rgba(192, 132, 255, 0.18), transparent 70%);
   opacity: 0;
   transition: 0.35s;
 }
@@ -716,7 +716,7 @@ body {
 .dot {
   width: 6px;
   height: 6px;
-  background: #00B8FF;
+  background: #8B3DFF;
   border-radius: 50%;
 }
 
@@ -799,9 +799,9 @@ body {
 }
 
 .text-esmerald {
-  color: #AEEAFF;
+  color: #DEC4FF;
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(0, 184, 255, 0.18);
+  text-shadow: 0 0 10px rgba(139, 61, 255, 0.18);
 }
 
 .text-gold {
@@ -1142,7 +1142,7 @@ body {
   flex: 1;
 }
 .experience-content h5 {
-  color: #00B8FF;
+  color: #8B3DFF;
   font-size: 14px;
   margin-bottom: 10px;
   font-weight: 500;
@@ -1232,9 +1232,9 @@ Resume Card
   width: 110px;
   padding: 6px 6px;
   border-radius: 26px;
-  background: rgba(0, 184, 255, 0.12);
-  border: 1px solid rgba(0, 184, 255, 0.25);
-  color: #67D9FF;
+  background: rgba(139, 61, 255, 0.12);
+  border: 1px solid rgba(139, 61, 255, 0.25);
+  color: #C084FF;
   font-size: 11px;
   font-weight: 600;
 }
@@ -1310,7 +1310,7 @@ Resume Card
 }
 
 .certification-company {
-  color: #00B8FF;
+  color: #8B3DFF;
   font-size: 12px;
 }
 
@@ -1321,9 +1321,9 @@ Resume Card
 }
 
 .certification-speaker {
-  background: rgba(0, 184, 255, 0.12);
-  border: 1px solid rgba(0, 184, 255, 0.35);
-  color: #67D9FF;
+  background: rgba(139, 61, 255, 0.12);
+  border: 1px solid rgba(139, 61, 255, 0.35);
+  color: #C084FF;
 }
 
 .certification-publication {
@@ -1357,7 +1357,7 @@ Resume Card
   margin-top: 120px;
   padding: 20px 8%;
   position: relative;
-  background: rgba(0, 184, 255, 0.1);
+  background: rgba(139, 61, 255, 0.1);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1368,7 +1368,7 @@ Resume Card
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at left, rgba(0, 184, 255, 0.1), transparent 35%), radial-gradient(circle at right, rgba(212, 175, 55, 0.1), transparent 35%);
+  background: radial-gradient(circle at left, rgba(139, 61, 255, 0.1), transparent 35%), radial-gradient(circle at right, rgba(212, 175, 55, 0.1), transparent 35%);
   pointer-events: none;
 }
 
@@ -1397,7 +1397,7 @@ Resume Card
   border-radius: 18px;
   font-weight: 700;
   color: #FFF;
-  background: linear-gradient(135deg, #00B8FF, #D4AF37);
+  background: linear-gradient(135deg, #8B3DFF, #D4AF37);
   box-shadow: 0 0 30px rgba(212, 175, 55, 0.18);
 }
 
@@ -1468,7 +1468,7 @@ Resume Card
 .footer-divider {
   margin: 35px 0;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.4), rgba(0, 184, 255, 0.4), transparent);
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.4), rgba(139, 61, 255, 0.4), transparent);
 }
 
 .footer-bottom {
