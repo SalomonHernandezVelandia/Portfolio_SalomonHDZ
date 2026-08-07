@@ -1,0 +1,73 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+@media (max-width:1366px){
+    .experiences-grid{
+        grid-template-columns:55% 40%;
+        gap:25px;
+    }
+}
+
+@media(max-width:1024px){
+    .experience-card-test{
+        height:auto;
+        min-height:350px;
+    }
+
+    .resume-preview{
+        height:500px;
+        flex:none;
+    }
+}
+
+
+@media(max-width:768px){
+    .experiences-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .experiences-grid{
+        gap:25px;
+    }
+
+    .experience-header{
+        padding:14px 18px;
+    }
+
+    .experience-item{
+        gap:14px;
+    }
+
+    .resume-preview{
+        height:400px;
+    }
+
+}
+
+
+@media(max-width:576px){
+    .experience-card-test{
+        min-height:auto;
+    }
+
+    .experience-top{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .experience-item{
+        padding:14px;
+    }
+
+    .experience-logo{
+        width:42px;
+        height:42px;
+    }
+
+    .resume-preview{
+        height:350px;
+    }
+}
+

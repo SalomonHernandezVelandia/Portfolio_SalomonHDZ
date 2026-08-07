@@ -87,16 +87,15 @@
         padding:20px;
         gap:14px;
     }
-
-    .project-content h3{
+     .project-content h3{
         height:auto;
-        font-size:22px;
+        font-size:$font-l;
     }
 
     .project-content p{
         height:auto;
         margin:0;
-        font-size:14px;
+        font-size:$font-s;
         line-height:1.6;
     }
 
@@ -125,9 +124,4 @@
     .project-content{
         padding:15px;
     }
-
-    .project-content h3{
-        font-size:$font-l;
-    }
-
 }
