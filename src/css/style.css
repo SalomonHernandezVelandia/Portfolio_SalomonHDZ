@@ -694,7 +694,7 @@ body {
 .meta {
   max-width: 200px;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.45);
+  color: #FFF7D6;
   margin-bottom: 5px;
 }
 
@@ -1624,6 +1624,60 @@ Resume Card
   top: 23px;
 }
 
+@media (max-width: 390px) {
+  .hero-wrapper {
+    margin-top: 0px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .status {
+    font-size: 11px;
+  }
+  .avatar {
+    height: 160px;
+  }
+  .meta {
+    max-width: 160px;
+    font-size: 7px;
+  }
+  .actions {
+    gap: 10px;
+  }
+  .btn {
+    padding: 5px 15px;
+  }
+  .card-bottom {
+    width: 44px;
+  }
+}
+@media (max-width: 1024px) {
+  .left-expand {
+    display: none;
+  }
+  .card-expand {
+    display: none;
+  }
+  .left-panel:hover .left-expand {
+    width: 0;
+  }
+  .left-panel:hover .left-button {
+    transform: none;
+  }
+  .about-panel:hover .card-expand {
+    width: 0;
+  }
+  .about-panel:hover .card-bottom {
+    transform: none;
+  }
+  .left-button {
+    width: 60px;
+    font-size: 15px;
+  }
+  .card-bottom {
+    width: 60px;
+  }
+}
 @media (max-width: 1200px) {
   .hero-wrapper {
     transform: scale(0.9);
@@ -1641,18 +1695,15 @@ Resume Card
   .hero-wrapper {
     margin-top: 70px;
   }
-}
-@media (min-width: 1600px) {
   .card-top {
-    padding: 28px 40px;
+    padding: 30px 45px;
   }
   .avatar {
-    height: 220px;
+    height: 240px;
+    width: 78%;
   }
-}
-@media (min-width: 1600px) {
   .name {
-    font-size: 22px;
+    font-size: 21px;
   }
   .status {
     font-size: 15px;
@@ -1661,19 +1712,10 @@ Resume Card
     max-width: 280px;
     font-size: 15px;
   }
-}
-@media (min-width: 1600px) {
-  .avatar {
-    width: 72%;
-  }
-}
-@media (min-width: 1600px) {
   .btn {
     padding: 8px 32px;
-    font-size: 14px;
+    font-size: 15px;
   }
-}
-@media (min-width: 1600px) {
   .left-panel:hover .left-button {
     transform: translateX(-450px);
   }
@@ -1683,8 +1725,6 @@ Resume Card
   .left-expand .section {
     width: 450px;
   }
-}
-@media (min-width: 1600px) {
   .about-panel:hover .card-bottom {
     transform: translateX(560px);
   }
@@ -1694,17 +1734,13 @@ Resume Card
   .section {
     width: 560px;
   }
-}
-@media (min-width: 1600px) {
   .title {
-    font-size: 22px;
+    font-size: 21px;
   }
   .text {
     font-size: 15px;
     line-height: 1.75;
   }
-}
-@media (min-width: 1600px) {
   .tech-item i {
     font-size: 36px;
   }
@@ -1721,18 +1757,124 @@ Resume Card
 }
 @media (min-width: 1900px) {
   .hero-wrapper {
-    transform: scale(1.18);
+    transform: scale(1.2);
   }
 }
 @media (min-width: 2560px) {
   .hero-wrapper {
-    transform: scale(1.35);
+    transform: scale(1.5);
   }
 }
 @media (min-width: 3400px) {
   .hero-wrapper {
-    transform: scale(1.55);
+    transform: scale(2);
   }
+}
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+  z-index: 9998;
+}
+
+.mobile-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-panel {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  width: 92%;
+  max-width: 520px;
+  max-height: 80vh;
+  overflow: auto;
+  padding: 30px;
+  border-radius: 26px;
+  background: rgba(10, 10, 15, 0.92);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.35s;
+  z-index: 9999;
+}
+
+.mobile-panel.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.close-panel {
+  position: absolute;
+  right: 18px;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.close-panel:hover {
+  background: #D4AF37;
+  color: black;
+}
+
+.mobile-content {
+  margin-top: 20px;
+}
+
+.mobile-expand {
+  width: 100%;
+  display: block;
+}
+
+.mobile-expand .section {
+  width: 100%;
+  padding: 0;
+}
+
+.mobile-panel .section {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.mobile-panel .tech-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mobile-panel .tools-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mobile-panel .tech-item i,
+.mobile-panel .tool-item i {
+  font-size: 34px;
+}
+
+.mobile-panel .tech-item img,
+.mobile-panel .tool-item img {
+  width: 34px;
+  height: 34px;
+}
+
+.mobile-panel span {
+  font-size: 11px;
 }
 
 /*# sourceMappingURL=style.css.map */

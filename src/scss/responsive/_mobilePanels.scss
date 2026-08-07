@@ -1,0 +1,111 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+
+
+.mobile-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:9998;
+}
+
+.mobile-overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.mobile-panel{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-40%);
+    width:92%;
+    max-width:520px;
+    max-height:80vh;
+    overflow:auto;
+    padding:30px;
+    border-radius:26px;
+    background:rgba(10,10,15,.92);
+    backdrop-filter:blur(30px);
+    border:1px solid rgba(255,255,255,.08);
+    box-shadow:0 25px 70px rgba(0,0,0,.55);
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:9999;
+}
+
+.mobile-panel.show{
+    opacity:1;
+    visibility:visible;
+    transform:translate(-50%,-50%);
+}
+
+.close-panel{
+    position:absolute;
+    right:18px;
+    top:15px;
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    background:rgba(255,255,255,.05);
+    color:white;
+    font-size:22px;
+    transition:.3s;
+}
+
+.close-panel:hover{
+    background:$gold;
+    color:black;
+}
+
+.mobile-content{
+    margin-top:20px;
+}
+
+.mobile-expand{
+    width:100%;
+    display:block;
+}
+
+.mobile-expand .section{
+    width:100%;
+    padding:0;
+}
+
+.mobile-panel .section{
+    width:100%;
+    height:auto;
+    padding:0;
+}
+
+.mobile-panel .tech-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.mobile-panel .tools-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.mobile-panel .tech-item i,
+.mobile-panel .tool-item i{
+    font-size:34px;
+}
+
+.mobile-panel .tech-item img,
+.mobile-panel .tool-item img{
+    width:34px;
+    height:34px;
+}
+
+.mobile-panel span{
+    font-size:11px;
+}

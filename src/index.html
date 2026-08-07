@@ -10,16 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <script src="js/svgIcons.js"></script>
-    <script src="js/data/projectData.js"></script>
-    <script src="js/data/experienceData.js"></script>
-    <script src="js/data/certificationData.js"></script>
-
-    <script src="js/components/projects.js"></script>
-    <script src="js/components/experience.js"></script>
-    <script src="js/components/certification.js"></script>
-
-    <script src="js/main.js"></script>
 </head>
 
 
@@ -150,13 +140,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="left-button tech-button">
+                        <div class="left-button tech-button" data-open="skillsPanel">
                             <span class="left-label">Skills</span>
                         </div>
                     </div>
 
                     <div class="left-panel">
-                        <div class="left-button tools-button">
+                        <div class="left-button tools-button" data-open="toolsPanel">
                             <span class="left-label">TOOLS</span>
                         </div>
                         <div class="left-expand">
@@ -231,7 +221,7 @@
                     </div>
 
                     <div class="about-panel">
-                        <div class="card-bottom">➜</div>
+                        <div class="card-bottom" data-open="aboutPanel">➜</div>
                         <div class="card-expand">
                             <div class="section">
                                 <div class="title"> Who I Am ?  </div>
@@ -494,6 +484,186 @@
         </div>
 
     </footer>
+
+
+    <!-- ================= MOBILE PANELS ================= -->
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-panel" id="skillsPanel">
+
+        <button class="close-panel">&times;</button>
+
+        <div class="mobile-content">
+
+            <div class="mobile-expand">
+                <div class="section">
+                    <div class="tech-category">
+                        <h4>Programming</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item item-main">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item item-main">
+                                <i class="devicon-mysql-original colored"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="tech-item item-main">
+                                <i class="devicon-cplusplus-plain colored"></i>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h4>Machine Learning</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="devicon-tensorflow-original colored"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-scikitlearn-plain colored"></i>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="svg/numpy.svg" alt="NumPy">
+                                <span>NumPy</span>
+                            </div>
+                            <div class="tech-item">
+                                <img src="svg/pandas.svg" alt="Pandas">
+                                <span>Pandas</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="devicon-matplotlib-plain colored"></i>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h4>Web Development</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item item-last">
+                                <i class="devicon-react-original colored"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item item-last">
+                                <i class="devicon-html5-plain colored"></i>
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-item item-last">
+                                <i class="devicon-css3-plain colored"></i>
+                                <span>CCS</span>
+                            </div>
+                            <div class="tech-item item-last">
+                                <i class="devicon-sass-original colored"></i>
+                                <span>SCSS</span>
+                            </div>
+                            <div class="tech-item item-last">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item item-last">
+                                <i class="devicon-php-plain colored"></i>
+                                <span>PHP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-panel" id="toolsPanel">
+
+        <button class="close-panel">&times;</button>
+
+        <div class="mobile-content">
+
+            <div class="mobile-expand">
+                <div class="section">
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="devicon-github-original"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="tool-item">
+                            <i class="devicon-vscode-plain colored"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="img/logo/Power-BI-Logo.png">
+                            <span>Power BI</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="img/logo/Excel_logo.png">
+                            <span>Excel</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="svg/moodle.svg" alt="Moodle">
+                            <span>Moodle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-panel" id="aboutPanel">
+
+        <button class="close-panel">&times;</button>
+
+        <div class="mobile-content">
+
+            <div class="section">
+                <div class="title"> Who I Am ?  </div>
+                <div class="text">
+                    I am a <span class="text-esmerald">Python Developer</span> and <span class="text-esmerald">AI Researcher</span> with professional
+                    experience in software development and artificial intelligence research.
+                    <br> <br> 
+                    Throughout my career I have worked as a <span class="text-esmerald">Software Developer</span> for a U.S.-based company and as a
+                    <span class="text-esmerald">Generative AI Researcher</span> at the <span class="text-gold">Universidad Nacional de Colombia</span>,
+                    developing solutions that combine software engineering, data analysis and machine learning
+                    to solve real-world problems.
+                    <br> <br> 
+                    My work has been presented at the <span class="text-gold">XIX Congreso Colombiano de Computación (CCC 2025)</span>
+                    and <span class="text-gold">SIPAIM 2025</span>, and has resulted in an <span class="text-gold">IEEE publication</span>
+                    on generative models for medical imaging.
+
+                    I am passionate about mathematics, statistics and machine learning,
+                    and I enjoy building intelligent systems that transform complex data into practical solutions.
+                </div>
+                <!-- <a href="about.html" class="about-link">
+                    <span>Want to know more about me?</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a> -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/svgIcons.js"></script>
+    <script src="js/data/projectData.js"></script>
+    <script src="js/data/experienceData.js"></script>
+    <script src="js/data/certificationData.js"></script>
+
+    <script src="js/components/projects.js"></script>
+    <script src="js/components/experience.js"></script>
+    <script src="js/components/certification.js"></script>
+    <script src="js/components/panels.js"></script>
+
+    <script src="js/main.js"></script>
 
 </body>
 

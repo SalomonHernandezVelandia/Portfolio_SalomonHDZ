@@ -1,226 +1,197 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 
+
+@media(max-width:390px){
+    .hero-wrapper{
+        margin-top: 0px;
+    }
+
+    .name {
+        font-size: $font-s;
+    }
+
+    .status {
+        font-size: $font-xs;
+    }
+
+    .avatar {
+        height:160px;
+    }
+
+    .meta {
+        max-width: 160px;
+        font-size: $font-xxs;
+    }
+
+    .actions{
+        gap:10px;
+    }
+
+    .btn {
+        padding: 5px 15px;
+    }
+
+    .card-bottom{
+        width:44px;
+    }
+}
+
+
+@media(max-width:1024px){
+    .left-expand{
+        display:none;
+    }
+
+    .card-expand{
+        display:none;
+    }
+
+    .left-panel:hover .left-expand{
+        width:0;
+    }
+
+    .left-panel:hover .left-button{
+        transform:none;
+    }
+
+    .about-panel:hover .card-expand{
+        width:0;
+    }
+
+    .about-panel:hover .card-bottom{
+        transform:none;
+    }
+
+    .left-button{
+        width:60px;
+        font-size:15px;
+    }
+
+    .card-bottom{
+        width:60px;
+    }
+
+}
+
 @media (max-width:1200px){
-
-.hero-wrapper{
-
-    transform:scale(.90);
-
+    .hero-wrapper{
+        transform:scale(.90);
+    }
 }
 
-}
 
 @media (min-width:1201px) and (max-width:1600px){
-
-.hero-wrapper{
-
-    transform:scale(1);
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.hero{
-
-    min-height:100vh;
-
-}
-
-.hero-wrapper{
-
-    margin-top:70px;
-
-}
-
+    .hero-wrapper{
+        transform:scale(1);
+    }
 }
 
 
 @media (min-width:1600px){
+    .hero{
+        min-height:100vh;
+    }
 
-.card-top{
+    .hero-wrapper{
+        margin-top:70px;
+    }
 
-    padding:28px 40px;
+    .card-top{
+        padding:30px 45px;
+    }
 
+    .avatar{
+        height:240px;
+        width:78%;
+    }
+
+    .name{
+        font-size:$font-xl;
+    }
+
+    .status{
+        font-size:$font-m;
+    }
+
+    .meta{
+        max-width:280px;
+        font-size:$font-m;
+    }
+
+    .btn{
+        padding:8px 32px;
+        font-size:$font-m;
+    }
+
+    .left-panel:hover .left-button{
+        transform:translateX(-450px);
+    }
+
+    .left-panel:hover .left-expand{
+        width:450px;
+    }
+
+    .left-expand .section{
+        width:450px;
+    }
+
+    .about-panel:hover .card-bottom{
+        transform:translateX(560px);
+    }
+
+    .about-panel:hover .card-expand{
+        width:560px;
+    }
+
+    .section{
+        width:560px;
+    }
+
+    .title{
+        font-size:$font-xl;
+    }
+
+    .text{
+        font-size:$font-m;
+        line-height:1.75;
+    }
+
+    .tech-item i{
+        font-size:36px;
+    }
+
+    .item-main i{
+        font-size:48px;
+    }
+
+    .item-last i{
+        font-size:26px;
+    }
+
+    .tech-item img{
+        width:36px;
+        height:36px;
+    }
 }
 
-.avatar{
 
-    height:220px;
-
-}
-
-}
-
-
-@media (min-width:1600px){
-
-.name{
-
-    font-size:22px;
-
-}
-
-.status{
-
-    font-size:15px;
-
-}
-
-.meta{
-
-    max-width:280px;
-
-    font-size:15px;
-
-}
-
-}
-
-
-@media (min-width:1600px){
-
-.avatar{
-
-    width:72%;
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.btn{
-
-    padding:8px 32px;
-
-    font-size:14px;
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.left-panel:hover .left-button{
-
-    transform:translateX(-450px);
-
-}
-
-.left-panel:hover .left-expand{
-
-    width:450px;
-
-}
-
-.left-expand .section{
-
-    width:450px;
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.about-panel:hover .card-bottom{
-
-    transform:translateX(560px);
-
-}
-
-.about-panel:hover .card-expand{
-
-    width:560px;
-
-}
-
-.section{
-
-    width:560px;
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.title{
-
-    font-size:22px;
-
-}
-
-.text{
-
-    font-size:15px;
-
-    line-height:1.75;
-
-}
-
-}
-
-@media (min-width:1600px){
-
-.tech-item i{
-
-    font-size:36px;
-
-}
-
-.item-main i{
-
-    font-size:48px;
-
-}
-
-.item-last i{
-
-    font-size:26px;
-
-}
-
-.tech-item img{
-
-    width:36px;
-
-    height:36px;
-
-}
-
-}
 
 @media (min-width:1900px){
-
-.hero-wrapper{
-
-    transform:scale(1.18);
-
-}
-
+    .hero-wrapper{
+        transform:scale(1.2);
+    }
 }
 
 @media (min-width:2560px){
-
-.hero-wrapper{
-
-    transform:scale(1.35);
-
-}
-
+    .hero-wrapper{
+        transform:scale(1.5);
+    }
 }
 
 @media (min-width:3400px){
-
-.hero-wrapper{
-
-    transform:scale(1.55);
-
-}
-
+    .hero-wrapper{
+        transform:scale(2);
+    }
 }
 
