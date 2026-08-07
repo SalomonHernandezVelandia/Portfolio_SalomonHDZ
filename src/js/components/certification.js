@@ -14,26 +14,19 @@ function createCertificationCard(certification){
 
             <div class="certification-content">
                 <div class="certification-top">
-                    <div class="certification-logo">
-                        <img
-                            src="${certification.logo}"
-                            alt="${certification.organization}">
+                    <div class="certification-date">
+                        ${certification.date}
                     </div>
                     <span class="certification-badge certification-${certification.type}">
                         ${certification.badge}
                     </span>
                 </div>
-
                 <div class="certification-title">
                     ${certification.title}
                 </div>
 
                 <div class="certification-company">
                     ${certification.organization}
-                </div>
-
-                <div class="certification-date">
-                    ${certification.date}
                 </div>
             </div>
         </article>

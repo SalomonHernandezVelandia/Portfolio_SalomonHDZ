@@ -76,7 +76,6 @@
         color:$text-secondary;
         font-size:14px;
     }
-
 }
 
 .footer-links{
@@ -84,10 +83,10 @@
     gap:28px;
     flex-wrap:wrap;
     a{
-    color:$text-secondary;
-    text-decoration:none;
-    transition:.35s;
-    position:relative;
+        color:$text-secondary;
+        text-decoration:none;
+        transition:.35s;
+        position:relative;
     }
     a::after{
         content:"";
@@ -151,17 +150,4 @@
     gap:15px;
     color:$text-disabled;
     font-size:13px;
-}
-
-
-@media(max-width:900px){
-    .footer-top{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .footer-bottom{
-        flex-direction:column;
-        align-items:center;
-    }
 }

@@ -27,15 +27,16 @@
     padding: 20px 30px;
     h3{
         color:$white;
-        height: 30px;
+        height: auto;
         font-size:$font-xl;
         font-weight: $font-bolt;
+        margin-bottom: 5px;
     }
     p{
         color:$white;
-        height: 45px;
+        height: auto;
         font-size:$font-m;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 }
 
@@ -55,8 +56,9 @@
 .tech-stack{
     display:flex;
     flex-wrap:wrap;
-    height: 25px;
+    height: auto;
     gap:5px;
+    margin-bottom: 10px;
 }
 
 .tech-pill{

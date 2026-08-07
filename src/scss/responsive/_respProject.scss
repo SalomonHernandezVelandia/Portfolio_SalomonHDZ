@@ -2,9 +2,22 @@
 @use "../abstracts/variables" as *;
 
 
+
+@media (max-width:1600px){
+    .project-content{
+        h3{
+            font-size:$font-m + 1 ;
+        }
+        p{
+            font-size:$font-s +1;
+        }
+    }
+}
+
+
 @media (max-width:1366px){
     .sections{
-        width:92%;
+        width:85%;
     }
 
     .main-content{
@@ -19,7 +32,7 @@
 
 @media (max-width:1024px){
     .sections{
-        width:95%;
+        width:85%;
     }
 
     .main-content{
@@ -31,13 +44,10 @@
     }
 
     .project-content{
-        padding:18px 22px;
         h3{
-            height: 45px;
             font-size:$font-l;
         }
         p{
-            height: 45px;
             font-size:$font-s;
         }
     }
@@ -63,6 +73,15 @@
             font-size: $font-xxs;
         }
     }
+
+    .project-content{
+        h3{
+            font-size:$font-m;
+        }
+        p{
+            font-size:$font-xs;
+        }
+    }
 }
 
 
@@ -86,17 +105,16 @@
     .project-content{
         padding:20px;
         gap:14px;
-    }
-     .project-content h3{
-        height:auto;
-        font-size:$font-l;
-    }
-
-    .project-content p{
-        height:auto;
-        margin:0;
-        font-size:$font-s;
-        line-height:1.6;
+        h3{
+            height:auto;
+            font-size:$font-l - 2px;
+        }
+        p{
+            height:auto;
+            margin:0;
+            font-size:$font-s;
+            line-height:1.6;
+        }
     }
 
     .tech-stack{

@@ -61,7 +61,7 @@
 }
 
 .certification-preview{
-    height:120px;
+    height:250px;
     overflow:hidden;
     border-radius:$radius-avatar;
     img{
@@ -83,20 +83,7 @@
     display:flex;
     justify-content:space-between;
     align-items: center;
-    margin-bottom:5px;
-}
-
-.certification-logo{
-    width:40px;
-    height:40px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    img{
-        width:100%;
-        height:100%;
-        object-fit:contain;
-    }
+    margin-bottom: 10px;
 }
 
 .certification-certificate{
@@ -118,12 +105,12 @@
 
 .certification-title{
     color:$white;
-    font-size:$font-xs;
+    font-size:$font-m;
     font-weight:$font-bolt;
 }
 .certification-company{
     color:$esmerald;
-    font-size:10px;
+    font-size:$font-s;
 }
 
 .certification-date{

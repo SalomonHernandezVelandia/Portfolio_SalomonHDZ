@@ -93,13 +93,13 @@
     flex:1;
     h5{
         color:$esmerald;
-        font-size:12px;
+        font-size:$font-s + 2px;
         margin-bottom:10px;
         font-weight:500;
     }
         p{
         color:$text-secondary;
-        font-size:12px;
+        font-size:$font-s + 1px;
         line-height:1.7;
         margin: 0;
     }
@@ -111,13 +111,13 @@
     align-items:center;
     h4{
         color:$white;
-        font-size:14px;
+        font-size:$font-m;
     }
 }
 
 .experience-date{
     color:$gold;
-    font-size:10px;
+    font-size:$font-s;
     white-space:nowrap;
 }
 

@@ -2,94 +2,26 @@
 @use "../abstracts/variables" as *;
 
 
-@media(max-width:390px){
-    .hero{
-        min-height:80vh;
-    }
-
+@media (min-width:3400px){
     .hero-wrapper{
-        margin-top: 0px;
-    }
-
-    .name {
-        font-size: $font-s;
-    }
-
-    .status {
-        font-size: $font-xs;
-    }
-
-    .avatar {
-        height:160px;
-    }
-
-    .meta {
-        max-width: 160px;
-        font-size: $font-xxs;
-    }
-
-    .actions{
-        gap:10px;
-    }
-
-    .btn {
-        padding: 5px 15px;
-    }
-
-    .card-bottom{
-        width:44px;
+        transform:scale(2);
     }
 }
 
 
-@media(max-width:1024px){
-    .left-expand{
-        display:none;
-    }
-
-    .card-expand{
-        display:none;
-    }
-
-    .left-panel:hover .left-expand{
-        width:0;
-    }
-
-    .left-panel:hover .left-button{
-        transform:none;
-    }
-
-    .about-panel:hover .card-expand{
-        width:0;
-    }
-
-    .about-panel:hover .card-bottom{
-        transform:none;
-    }
-
-    .left-button{
-        width:60px;
-        font-size:15px;
-    }
-
-    .card-bottom{
-        width:60px;
-    }
-
-}
-
-@media (max-width:1200px){
+@media (min-width:2560px){
     .hero-wrapper{
-        transform:scale(.90);
+        transform:scale(1.5);
     }
 }
 
 
-@media (min-width:1201px) and (max-width:1600px){
+@media (min-width:1900px){
     .hero-wrapper{
-        transform:scale(1);
+        transform:scale(1.2);
     }
 }
+
 
 
 @media (min-width:1600px){
@@ -180,22 +112,134 @@
 }
 
 
-
-@media (min-width:1900px){
+@media (max-width:1200px){
     .hero-wrapper{
-        transform:scale(1.2);
+        transform:scale(.90);
     }
 }
 
-@media (min-width:2560px){
+
+@media (min-width:1201px) and (max-width:1600px){
     .hero-wrapper{
-        transform:scale(1.5);
+        transform:scale(1);
     }
 }
 
-@media (min-width:3400px){
-    .hero-wrapper{
-        transform:scale(2);
+
+@media(max-width:1024px){
+    .hero{
+        min-height:60vh;
+    }
+
+    .left-expand{
+        display:none;
+    }
+
+    .card-expand{
+        display:none;
+    }
+
+    .left-panel:hover .left-expand{
+        width:0;
+    }
+
+    .left-panel:hover .left-button{
+        transform:none;
+    }
+
+    .about-panel:hover .card-expand{
+        width:0;
+    }
+
+    .about-panel:hover .card-bottom{
+        transform:none;
+    }
+
+    .left-button{
+        width:60px;
+        font-size:15px;
+    }
+
+    .card-bottom{
+        width:60px;
+    }
+
+}
+
+
+@media(max-width:576px){
+    .name {
+        font-size: $font-m;
+    }
+
+    .status {
+        font-size: $font-s;
+    }
+
+    .avatar {
+        height:160px;
+    }
+
+    .meta {
+        max-width: 190px;
+        font-size: $font-xs;
+    }
+
+    .actions{
+        gap:10px;
+    }
+
+    .left-label{
+        font-size:$font-l;
+        letter-spacing:2px;
+        font-weight:900;
+    }
+
+    .btn {
+        padding: 5px 15px;
+    }
+
+    .card-bottom{
+        width:44px;
     }
 }
 
+
+@media(max-width:320px){
+    .hero{
+        min-height:80vh;
+    }
+
+    .hero-wrapper{
+        margin-top: 0px;
+    }
+
+    .name {
+        font-size: $font-s;
+    }
+
+    .status {
+        font-size: $font-xs;
+    }
+
+    .avatar {
+        height:160px;
+    }
+
+    .meta {
+        max-width: 160px;
+        font-size: $font-xxs;
+    }
+
+    .actions{
+        gap:10px;
+    }
+
+    .btn {
+        padding: 5px 15px;
+    }
+
+    .card-bottom{
+        width:44px;
+    }
+}

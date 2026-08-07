@@ -966,15 +966,16 @@ body {
 }
 .project-content h3 {
   color: #FFF;
-  height: 30px;
+  height: auto;
   font-size: 21px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .project-content p {
   color: #FFF;
-  height: 45px;
+  height: auto;
   font-size: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .project-media {
@@ -992,8 +993,9 @@ body {
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  height: 25px;
+  height: auto;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .tech-pill {
@@ -1141,13 +1143,13 @@ body {
 }
 .experience-content h5 {
   color: #00B8FF;
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 .experience-content p {
   color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.7;
   margin: 0;
 }
@@ -1159,12 +1161,12 @@ body {
 }
 .experience-top h4 {
   color: #FFF;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .experience-date {
   color: #D4AF37;
-  font-size: 10px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -1259,7 +1261,7 @@ Resume Card
 }
 
 .certification-preview {
-  height: 120px;
+  height: 250px;
   overflow: hidden;
   border-radius: 18px;
 }
@@ -1281,20 +1283,7 @@ Resume Card
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
-}
-
-.certification-logo {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.certification-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  margin-bottom: 10px;
 }
 
 .certification-certificate {
@@ -1316,13 +1305,13 @@ Resume Card
 
 .certification-title {
   color: #FFF;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 .certification-company {
   color: #00B8FF;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .certification-date {
@@ -1361,7 +1350,7 @@ Resume Card
 
 .article-card-test {
   width: 100%;
-  height: 350px;
+  height: 640px;
 }
 
 .footer {
@@ -1491,16 +1480,6 @@ Resume Card
   font-size: 13px;
 }
 
-@media (max-width: 900px) {
-  .footer-top {
-    flex-direction: column;
-    text-align: center;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media (max-width: 1200px) {
   .navbar {
     padding: 0 35px;
@@ -1622,71 +1601,19 @@ Resume Card
   top: 23px;
 }
 
-@media (max-width: 390px) {
-  .hero {
-    min-height: 80vh;
-  }
+@media (min-width: 3400px) {
   .hero-wrapper {
-    margin-top: 0px;
-  }
-  .name {
-    font-size: 12px;
-  }
-  .status {
-    font-size: 11px;
-  }
-  .avatar {
-    height: 160px;
-  }
-  .meta {
-    max-width: 160px;
-    font-size: 7px;
-  }
-  .actions {
-    gap: 10px;
-  }
-  .btn {
-    padding: 5px 15px;
-  }
-  .card-bottom {
-    width: 44px;
+    transform: scale(2);
   }
 }
-@media (max-width: 1024px) {
-  .left-expand {
-    display: none;
-  }
-  .card-expand {
-    display: none;
-  }
-  .left-panel:hover .left-expand {
-    width: 0;
-  }
-  .left-panel:hover .left-button {
-    transform: none;
-  }
-  .about-panel:hover .card-expand {
-    width: 0;
-  }
-  .about-panel:hover .card-bottom {
-    transform: none;
-  }
-  .left-button {
-    width: 60px;
-    font-size: 15px;
-  }
-  .card-bottom {
-    width: 60px;
+@media (min-width: 2560px) {
+  .hero-wrapper {
+    transform: scale(1.5);
   }
 }
-@media (max-width: 1200px) {
+@media (min-width: 1900px) {
   .hero-wrapper {
-    transform: scale(0.9);
-  }
-}
-@media (min-width: 1201px) and (max-width: 1600px) {
-  .hero-wrapper {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 }
 @media (min-width: 1600px) {
@@ -1756,19 +1683,103 @@ Resume Card
     height: 36px;
   }
 }
-@media (min-width: 1900px) {
+@media (max-width: 1200px) {
   .hero-wrapper {
-    transform: scale(1.2);
+    transform: scale(0.9);
   }
 }
-@media (min-width: 2560px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
   .hero-wrapper {
-    transform: scale(1.5);
+    transform: scale(1);
   }
 }
-@media (min-width: 3400px) {
+@media (max-width: 1024px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .left-expand {
+    display: none;
+  }
+  .card-expand {
+    display: none;
+  }
+  .left-panel:hover .left-expand {
+    width: 0;
+  }
+  .left-panel:hover .left-button {
+    transform: none;
+  }
+  .about-panel:hover .card-expand {
+    width: 0;
+  }
+  .about-panel:hover .card-bottom {
+    transform: none;
+  }
+  .left-button {
+    width: 60px;
+    font-size: 15px;
+  }
+  .card-bottom {
+    width: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .name {
+    font-size: 15px;
+  }
+  .status {
+    font-size: 12px;
+  }
+  .avatar {
+    height: 160px;
+  }
+  .meta {
+    max-width: 190px;
+    font-size: 11px;
+  }
+  .actions {
+    gap: 10px;
+  }
+  .left-label {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 900;
+  }
+  .btn {
+    padding: 5px 15px;
+  }
+  .card-bottom {
+    width: 44px;
+  }
+}
+@media (max-width: 320px) {
+  .hero {
+    min-height: 80vh;
+  }
   .hero-wrapper {
-    transform: scale(2);
+    margin-top: 0px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .status {
+    font-size: 11px;
+  }
+  .avatar {
+    height: 160px;
+  }
+  .meta {
+    max-width: 160px;
+    font-size: 7px;
+  }
+  .actions {
+    gap: 10px;
+  }
+  .btn {
+    padding: 5px 15px;
+  }
+  .card-bottom {
+    width: 44px;
   }
 }
 .mobile-overlay {
@@ -1878,9 +1889,17 @@ Resume Card
   font-size: 11px;
 }
 
+@media (max-width: 1600px) {
+  .project-content h3 {
+    font-size: 16px;
+  }
+  .project-content p {
+    font-size: 13px;
+  }
+}
 @media (max-width: 1366px) {
   .sections {
-    width: 92%;
+    width: 85%;
   }
   .main-content {
     grid-template-columns: 320px 1fr;
@@ -1891,7 +1910,7 @@ Resume Card
 }
 @media (max-width: 1024px) {
   .sections {
-    width: 95%;
+    width: 85%;
   }
   .main-content {
     grid-template-columns: 260px 1fr;
@@ -1899,15 +1918,10 @@ Resume Card
   .project-media {
     height: auto;
   }
-  .project-content {
-    padding: 18px 22px;
-  }
   .project-content h3 {
-    height: 45px;
     font-size: 18px;
   }
   .project-content p {
-    height: 45px;
     font-size: 12px;
   }
 }
@@ -1926,6 +1940,12 @@ Resume Card
   }
   .tech-pill small {
     font-size: 7px;
+  }
+  .project-content h3 {
+    font-size: 15px;
+  }
+  .project-content p {
+    font-size: 11px;
   }
 }
 @media (max-width: 576px) {
@@ -1948,7 +1968,7 @@ Resume Card
   }
   .project-content h3 {
     height: auto;
-    font-size: 18px;
+    font-size: 16px;
   }
   .project-content p {
     height: auto;
@@ -1985,7 +2005,6 @@ Resume Card
 }
 @media (max-width: 1024px) {
   .experience-card-test {
-    height: auto;
     min-height: 350px;
   }
   .resume-preview {
@@ -2007,18 +2026,32 @@ Resume Card
   .experience-item {
     gap: 14px;
   }
+  .experience-top h4 {
+    font-size: 14px;
+  }
+  .experience-content h5 {
+    font-size: 12px;
+  }
+  .experience-content p {
+    font-size: 12px;
+  }
   .resume-preview {
     height: 400px;
   }
 }
 @media (max-width: 576px) {
-  .experience-card-test {
-    min-height: auto;
+  .experience-header {
+    padding: 15px 25px;
+  }
+  .experience-header h3 {
+    font-size: 15px;
   }
   .experience-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+  }
+  .experience-card-test {
+    height: 400px;
   }
   .experience-item {
     padding: 14px;
@@ -2029,6 +2062,39 @@ Resume Card
   }
   .resume-preview {
     height: 350px;
+  }
+}
+@media (max-width: 375px) {
+  .experience-header h3 {
+    font-size: 14px;
+  }
+  .experience-header span {
+    font-size: 8px;
+  }
+  .experience-top h4 {
+    font-size: 15px;
+  }
+  .experience-content h5 {
+    font-size: 11px;
+  }
+  .experience-content p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 1920px) {
+  .certification-preview {
+    height: 200px;
+  }
+  .article-card-test {
+    height: 490px;
+  }
+}
+@media (max-width: 1440px) {
+  .certification-preview {
+    height: 150px;
+  }
+  .article-card-test {
+    height: 370px;
   }
 }
 @media (max-width: 1024px) {
@@ -2053,6 +2119,9 @@ Resume Card
   }
   .article-card-test .resume-buttons {
     flex-shrink: 0;
+  }
+  .certification-preview {
+    height: 250px;
   }
 }
 @media (max-width: 768px) {
@@ -2080,7 +2149,7 @@ Resume Card
     width: auto;
   }
   .certification-preview {
-    height: 180px;
+    height: 200px;
   }
   .certification-content {
     padding: 15px;
@@ -2102,6 +2171,10 @@ Resume Card
   }
   .article-card-test .resume-buttons {
     flex-shrink: 0;
+    gap: 50px;
+  }
+  .article-card-test {
+    height: 450px;
   }
 }
 @media (max-width: 430px) {
@@ -2114,17 +2187,39 @@ Resume Card
   .certification-company {
     font-size: 11px;
   }
-  .article-card-test {
-    height: 400px;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 6%;
   }
-  .article-card-test .resume-card {
-    min-height: 0;
+}
+@media (max-width: 900px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
   }
-  .article-card-test .resume-preview {
-    min-height: 0;
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
   }
-  .article-card-test .resume-buttons {
-    flex-shrink: 0;
+  .footer-info {
+    width: 260px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-links {
+    gap: 20px;
+  }
+  .footer-links a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .footer-info {
+    width: 100%;
+  }
+  .footer-info h3 {
+    font-size: 15px;
   }
 }
 

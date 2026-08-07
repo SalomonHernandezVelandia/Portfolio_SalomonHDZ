@@ -2,6 +2,24 @@
 @use "../abstracts/variables" as *;
 
 
+@media(max-width:1920px){
+    .certification-preview{
+        height:200px;
+    }
+    .article-card-test{
+        height:490px;
+    }
+}
+
+@media(max-width:1440px){
+    .certification-preview{
+        height:150px;
+    }
+    .article-card-test{
+        height:370px;
+    }
+}
+
 
 @media(max-width:1024px){
     .section-father{
@@ -16,7 +34,6 @@
     }
     .article-card-test{
         height:520px;
-
         .resume-card{
             min-height:0;
         }
@@ -28,6 +45,10 @@
         .resume-buttons{
             flex-shrink:0;
         }
+    }
+
+    .certification-preview{
+        height:250px;
     }
 }
 
@@ -49,7 +70,6 @@
 
 
 @media(max-width:576px){
-
     .certifications-grid{
         grid-template-columns:1fr;
     }
@@ -65,7 +85,7 @@
     }
 
     .certification-preview{
-        height:180px;
+        height:200px;
     }
 
     .certification-content{
@@ -92,7 +112,12 @@
 
         .resume-buttons{
             flex-shrink:0;
+            gap: 50px;
         }
+    }
+
+    .article-card-test{
+        height:450px;
     }
 }
 
@@ -108,22 +133,6 @@
 
     .certification-company{
         font-size:$font-xs;
-    }
-
-    .article-card-test{
-        height:400px;
-
-        .resume-card{
-            min-height:0;
-        }
-
-        .resume-preview{
-            min-height:0;
-        }
-
-        .resume-buttons{
-            flex-shrink:0;
-        }
     }
 }
 

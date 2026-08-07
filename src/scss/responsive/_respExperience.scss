@@ -1,6 +1,7 @@
 @use "../abstracts/colors" as *;
 @use "../abstracts/variables" as *;
 
+
 @media (max-width:1366px){
     .experiences-grid{
         grid-template-columns:55% 40%;
@@ -8,9 +9,9 @@
     }
 }
 
+
 @media(max-width:1024px){
     .experience-card-test{
-        height:auto;
         min-height:350px;
     }
 
@@ -39,6 +40,21 @@
         gap:14px;
     }
 
+    .experience-top{
+        h4{
+            font-size:$font-m - 1px;
+        }
+    }
+
+    .experience-content{
+        h5{
+            font-size:$font-s;
+        }
+            p{
+            font-size:$font-s;
+        }
+    }
+
     .resume-preview{
         height:400px;
     }
@@ -47,14 +63,20 @@
 
 
 @media(max-width:576px){
-    .experience-card-test{
-        min-height:auto;
+    .experience-header{
+        padding: 15px 25px;
+        h3{
+            font-size:$font-m;
+        }
     }
 
     .experience-top{
         flex-direction:column;
         align-items:flex-start;
-        gap:5px;
+    }
+
+    .experience-card-test{
+        height: 400px;
     }
 
     .experience-item{
@@ -71,3 +93,29 @@
     }
 }
 
+
+@media(max-width:375px){
+    .experience-header{
+        h3{
+            font-size:$font-m - 1px;
+        }
+        span{
+            font-size:$font-xxs + 1px;
+        }
+    }
+
+    .experience-top{
+        h4{
+            font-size:$font-m;
+        }
+    }
+
+    .experience-content{
+        h5{
+            font-size:$font-xs;
+        }
+            p{
+            font-size:$font-xs;
+        }
+    }
+}
