@@ -69,7 +69,7 @@
     }
     a:hover{
         color:var(--theme-text);
-        color:$white;
+        color:var(--theme-text);
     }
     a::after{
         content:"";

@@ -37,7 +37,7 @@
     width:0;
     height:100%;
     overflow:hidden;
-    background:$esmerald-900;
+    background:var(--theme-esmerald900);
     transition:width .45s cubic-bezier(.2,.8,.2,1);
 }
 
@@ -141,7 +141,7 @@
 .tech-item i,
 .tool-item i{
     font-size:30px;
-    color:$white;
+    color:var(--theme-text);
 }
 .item-main i {
     font-size:40px;
@@ -160,7 +160,7 @@
 .tech-item span,
 .tool-item span{
     font-size:$font-xxs;
-    color:$text-secondary;
+    color:var(--theme-text-secondar);
     text-align:center;
     line-height:1.2;
 }
@@ -236,10 +236,13 @@
 .card-top {
     position: relative;
     padding: $padding-card 30px;
-    background:rgba(156, 148, 148, 0.07);
-    backdrop-filter:blur(30px) saturate(220%);
-    border:1px solid rgba(255,255,255,.18);
+    background:var(--theme-card-bg);
+    backdrop-filter:blur(35px) saturate(180%);
+    border:1px solid var(--theme-card-border);
     backdrop-filter: blur(18px);
+    box-shadow:
+        0 25px 60px var(--theme-shadow),
+        inset 0 1px 0 rgba(255,255,255,.22);
     -webkit-backdrop-filter: blur(18px);
     border:1px solid rgba(255,255,255,.08);
 }
@@ -259,11 +262,12 @@
             $gold
         );
     -webkit-mask:
-        linear-gradient($white 0 0) content-box,
-        linear-gradient($white 0 0);
+        linear-gradient(var(--theme-text) 0 0) content-box,
+        linear-gradient(var(--theme-text) 0 0);
     mask-composite:exclude;
     pointer-events:none;
 }
+
 .card-top::after{
     content:"";
     position:absolute;
@@ -293,7 +297,13 @@
             transparent 70%
         );
     opacity:0;
-    transition:.35s;
+    transition:
+        opacity .35s ease,
+        background .45s ease;
+}
+
+.card:hover .glass{
+    opacity:.9;
 }
 .card:hover .glass {
     opacity:.9;
@@ -329,9 +339,8 @@
     object-fit:cover;
     object-position: center 56%;
     display:block;
-    border:2px solid rgba(255,255,255,.08);
-    box-shadow:
-    0 15px 30px rgba(0,0,0,.35);
+    border:2px solid var(--theme-glass-border);
+    box-shadow:0 15px 30px var(--theme-shadow);    
     transition:transform .45s ease;
 }
 
@@ -342,13 +351,13 @@
 .meta {
     max-width: 200px;
     font-size: $font-s;
-    color: $gold-100;
+    color: var(--theme-gold100);
     margin-bottom: 5px;
 }
 
 /* INFO */
 .name {
-    color: $white;
+    color:var(--theme-text);
     font-weight: $font-bolt;
     font-size: $font-m;
 }
@@ -358,7 +367,7 @@
     align-items: center;
     gap: 6px;
     font-size: $font-s;
-    color: $text-secondary;
+    color:var(--theme-text-secondary);
 }
 
 .dot {
@@ -413,7 +422,7 @@
     width:0;
     overflow:hidden;
     white-space:normal;
-    background:$gold-darksidian;
+    background:var(--theme-goldDarksidian);
     transition:width .45s cubic-bezier(.2,.8,.2,1);
 }
 
@@ -435,24 +444,24 @@
 .title {
     font-size: $font-m;
     font-weight: $font-bolt;
-    color: $white;
+    color:var(--theme-text);
     margin-bottom: 10px;
 }
 
 .text {
     font-size: $font-s;
-    color: $text-secondary;
+    color: var(--theme-text);
     line-height: 1.4;
     flex:1;
 }
 
 .text-esmerald{
-    color:$esmerald-200;
+    color:var(--theme-esmerald200);
     font-weight:700;
     text-shadow:0 0 10px rgba($esmerald,.18);
 }
 .text-gold{
-    color:$gold-300;
+    color:var(--theme-gold300);
     font-weight:700;
     text-shadow:0 0 10px rgba($gold,.15);
 }
@@ -475,7 +484,7 @@
 }
 
 .about-link:hover{
-    color:$white;
+    color:var(--theme-text);
     background:rgba($gold,.12);
     border-color:$gold;
     transform:translateX(6px);
@@ -501,7 +510,7 @@
     font-weight: $font-bolt;
     letter-spacing: 2px;
     background: transparent;
-    color: $white;
+    color:var(--theme-text);
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 0 0 0 transparent;
@@ -562,8 +571,8 @@
   top: 7%;
   left: 0%;
   opacity: 0;
-  background: $white;
-  box-shadow: 0 0 50px 30px $white;
+  background: var(--theme-text);
+  box-shadow: 0 0 50px 30px var(--theme-text);
   -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);

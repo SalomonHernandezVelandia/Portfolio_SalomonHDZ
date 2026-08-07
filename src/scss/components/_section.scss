@@ -44,7 +44,7 @@
     width:100%;
     height:2px;
     overflow:hidden;
-    background:$text-disabled;
+    background:var(--theme-text-disabled);
     position:relative;
     span{
         position:absolute;

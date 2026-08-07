@@ -11,12 +11,12 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding: 15px 25px;
-    background:rgba(255,255,255,.04);
+    padding:15px 25px;
+    background:var(--theme-surface);
     border-bottom:1px solid rgba($gold,.18);
     box-shadow:
-        0 12px 25px rgba(0,0,0,.35),
-        inset 0 1px 0 rgba(255,255,255,.08);
+        0 12px 25px var(--theme-shadow),
+        inset 0 1px 0 var(--theme-highlight);
     h3{
         display:flex;
         align-items:center;
@@ -29,7 +29,7 @@
         color:$gold;
     }
     span{
-        width: 110px;
+        width:110px;
         padding:6px 6px;
         border-radius:$radius-card;
         background:rgba($esmerald,.12);
@@ -49,15 +49,15 @@
 
 .certification-item{
     border-radius:18px;
-    background:$back-disabled;
-    border:1px solid rgba(255,255,255,.05);
+    background:var(--theme-certification-bg);
+    border:1px solid var(--theme-certification-border);
     transition:.35s;
     cursor:pointer;
 }
 .certification-item:hover{
     transform:translateY(-6px);
     border-color:rgba($gold,.35);
-    background:rgba($gold,.05);
+    background:var(--theme-certification-hover);
 }
 
 .certification-preview{
@@ -104,7 +104,7 @@
 }
 
 .certification-title{
-    color:$white;
+    color:var(--theme-text);
     font-size:$font-m;
     font-weight:$font-bolt;
 }
@@ -115,7 +115,7 @@
 
 .certification-date{
     margin-top:5px;
-    color:$text-secondary;
+    color:var(--theme-text-secondary);
     font-size:12px;
 }
 
