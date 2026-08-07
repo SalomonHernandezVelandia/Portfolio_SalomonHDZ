@@ -81,7 +81,9 @@ const projects = [
         description:"This work was developed as a thesis project and extends previous research published at SIPAIM (IEEE), exploring multiple generative architectures for synthetic echocardiographic image generation using Generative Learning.",
         gif:"gifs/generated_stylegan.gif",
         github:"https://github.com/SalomonHernandezVelandia/EchocardiogramGenerator",
+        githubAvailable: true,
         demo:"#",
+        demoAvailable: false,        
         technologies:[
             { name:"Python", level:100, percentage:true},
             { name:"PyTorch"},
@@ -94,10 +96,12 @@ const projects = [
     },
     {
         title: "Crypto Trading Dashboard & Signal Engine",
-        description: "Este proyecto es una plataforma de análisis de mercado cripto que combina datos históricos, métricas en tiempo real y lógica cuantitativa para generar señales de compra y venta.",
-        gif: "img/projects/Learning_English.jpg",
+        description: "This project is a cryptocurrency market analysis platform that combines historical data, real-time metrics, and quantitative logic to generate buy and sell signals.",
+        gif: "img/projects/Crypto_platform.jpg",
         github: "https://github.com/SalomonHernandezVelandia/CRYPTO-platform",
+        githubAvailable: true,
         demo: "#",
+        demoAvailable: false,
         technologies:[
             { name:"Python", level:100, percentage:true},
             { name:"Pandas"},
@@ -107,11 +111,13 @@ const projects = [
         ]
     },
     {
-        title: "Proyecto aprendizaje del Vocabulario Ingles con Python",
+        title: "English Vocabulary Learning Project with Python",
         description: "Program designed to teach English through a small, interactive game with a graphical interface. The system allows the user to enter words, which are then automatically analyzed and scored, providing immediate feedback to support the learning process.",
-        gif: "img/projects/Crypto_platform.jpg",
+        gif: "img/projects/Learning_English.jpg",
         github: "https://github.com/SalomonHernandezVelandia/LearningVocabularyEnglish_ConInterfaz",
+        githubAvailable: true,
         demo: "#",
+        demoAvailable: false,
         technologies:[
             { name:"Python", level:100, percentage:true},
             { name:"Git"},

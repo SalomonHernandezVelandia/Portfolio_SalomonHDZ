@@ -59,6 +59,34 @@
         height:400px;
     }
 
+       .experience-main{
+        gap:12px;
+    }
+
+    .experience-logo{
+        width:45px;
+        height:45px;
+    }
+
+    .experience-top{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .experience-date{
+        font-size:$font-xs;
+    }
+
+    .experience-detail-images{
+        grid-template-columns:1fr 1fr;
+        margin-bottom: 10px;
+    }
+
+    .experience-detail-image{
+        height:90px;
+    }
+
 }
 
 
@@ -76,7 +104,10 @@
     }
 
     .experience-card-test{
-        height: 400px;
+        height: 450px;
+    }
+    .cv-card-test{
+        height: 150px;
     }
 
     .experience-item{
@@ -89,7 +120,7 @@
     }
 
     .resume-preview{
-        height:350px;
+        height:100px;
     }
 }
 

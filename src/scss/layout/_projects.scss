@@ -123,3 +123,22 @@
     gap: 20px;
     margin-top: 5px;
 }
+
+.btn-disabled{
+    cursor:not-allowed;
+    pointer-events:none;
+    opacity:.45;
+    filter:grayscale(1);
+    background:rgba(255,255,255,.05);
+    border-color:rgba(255,255,255,.15);
+    color:rgba(255,255,255,.45);
+    box-shadow:none;
+}
+
+.btn-main.btn-disabled:hover{
+    transform:none;
+    background:rgba(255,255,255,.05);
+    border-color:rgba(255,255,255,.15);
+    color:rgba(255,255,255,.45);
+    box-shadow:none;
+}

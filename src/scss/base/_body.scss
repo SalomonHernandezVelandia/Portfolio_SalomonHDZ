@@ -17,9 +17,14 @@ body{
     min-height:100vh;
     overflow-x:hidden;
     font-family:"Manrope",sans-serif;
-    background:$body-night;
-}
 
+    background:var(--theme-body);
+    color:var(--theme-text);
+
+    transition:
+        background .45s ease,
+        color .45s ease;
+}
 //==============================================
 // METEORITOS
 //==============================================

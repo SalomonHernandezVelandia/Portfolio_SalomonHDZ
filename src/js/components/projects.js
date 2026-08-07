@@ -26,19 +26,52 @@ function generateTechStack(technologies){
 
 
 function createProjectCard(project){
-    const color1 = TECHNOLOGY_COLORS[project.technologies[0].name];
-    const color2 = TECHNOLOGY_COLORS[project.technologies[1].name];
+    const color1 = TECHNOLOGY_COLORS[project.technologies[0].name] || "#888";
+    const color2 = TECHNOLOGY_COLORS[project.technologies[1].name] || "#888";
+
+    const githubButton = project.githubAvailable
+        ? `
+            <a href="${project.github}" target="_blank" rel="noopener noreferrer" class="btn-main btn-github-main">
+                ${githubIcon()}
+                <span>GitHub</span>
+            </a>
+        `
+        : `
+            <button type="button" class="btn-main btn-github-main btn-disabled" disabled >
+                ${githubIcon()}
+                <span>GitHub</span>
+            </button>
+        `;
+
+    const demoButton = project.demoAvailable
+        ? `
+            <a href="${project.demo}" target="_blank" rel="noopener noreferrer" class="btn-main" >
+                ${playIcon()}
+                <span>Live Demo</span>
+            </a>
+        `
+        : `
+            <button type="button" class="btn-main btn-disabled" disabled>
+                ${playIcon()}
+                <span>Live Demo</span>
+            </button>
+        `;
 
     return `
-        <div class="project-main-card" 
-            style="--primary:${color1}; 
-            --secondary:${color2};
-        ">
+        <div
+            class="project-main-card"
+            style="
+                --primary:${color1};
+                --secondary:${color2};
+            "
+        >
             <div class="glass-lab__card main-content">
                 <div class="project-media">
-                    <img src="${project.gif}">
+                    <img
+                        src="${project.gif}"
+                        alt="${project.title}"
+                    >
                 </div>
-
                 <div class="project-content">
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
@@ -46,17 +79,10 @@ function createProjectCard(project){
                         ${generateTechStack(project.technologies)}
                     </div>
                     <div class="project-buttons">
-                        <a href="${project.github}" target="_blank" class="btn-main btn-github-main">
-                            ${githubIcon()}
-                            <span>GitHub</span>
-                        </a>
-                        <a href="${project.demo}" target="_blank" class="btn-main">
-                            ${playIcon()}
-                            <span>Live Demo</span>
-                        </a>
+                        ${githubButton}
+                        ${demoButton}
                     </div>
-                    </div>
-                </div>         
+                </div>
             </div>
         </div>
     `;

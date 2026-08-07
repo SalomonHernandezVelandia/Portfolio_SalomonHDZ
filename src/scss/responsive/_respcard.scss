@@ -23,7 +23,6 @@
 }
 
 
-
 @media (min-width:1600px){
     .hero{
         min-height:100vh;
@@ -56,8 +55,8 @@
     }
 
     .btn{
-        padding:8px 32px;
         font-size:$font-m;
+        padding: 5px 18px;
     }
 
     .left-panel:hover .left-button{
@@ -112,6 +111,26 @@
 }
 
 
+@media (max-width:1440px){
+    .name{
+        font-size:$font-xl;
+    }
+
+    .status{
+        font-size:$font-m;
+    }
+
+    .meta{
+        max-width:280px;
+        font-size:$font-m;
+    }
+
+    .avatar {
+        height:220px;
+    }
+}
+
+
 @media (max-width:1200px){
     .hero-wrapper{
         transform:scale(.90);
@@ -124,6 +143,7 @@
         transform:scale(1);
     }
 }
+
 
 
 @media(max-width:1024px){
@@ -156,7 +176,6 @@
     }
 
     .left-button{
-        width:60px;
         font-size:15px;
     }
 
@@ -176,6 +195,10 @@
         font-size: $font-s;
     }
 
+    .user {
+        margin-bottom: 50px;
+    }
+
     .avatar {
         height:160px;
     }
@@ -190,7 +213,7 @@
     }
 
     .left-label{
-        font-size:$font-l;
+        font-size:$font-m;
         letter-spacing:2px;
         font-weight:900;
     }

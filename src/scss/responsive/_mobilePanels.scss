@@ -95,17 +95,41 @@
     gap:20px;
 }
 
-.mobile-panel .tech-item i,
-.mobile-panel .tool-item i{
+// Tamaño general de tecnologías
+.mobile-panel .tech-item i{
     font-size:34px;
 }
-
-.mobile-panel .tech-item img,
-.mobile-panel .tool-item img{
+.mobile-panel .tech-item img{
     width:34px;
     height:34px;
+    object-fit:contain;
+}
+// Tecnologías principales
+.mobile-panel .tech-item.item-main i{
+    font-size:46px;
+}
+.mobile-panel .tech-item.item-main img{
+    width:46px;
+    height:46px;
+}
+// Tecnologías secundarias / Frontend
+.mobile-panel .tech-item.item-last i{
+    font-size:24px;
+}
+.mobile-panel .tech-item.item-last img{
+    width:24px;
+    height:24px;
 }
 
-.mobile-panel span{
+.mobile-panel .tech-item span{
     font-size:11px;
+}
+
+.mobile-panel .tech-item.item-main span{
+    font-size:12px;
+    font-weight:600;
+}
+
+.mobile-panel .tech-item.item-last span{
+    font-size:9px;
 }

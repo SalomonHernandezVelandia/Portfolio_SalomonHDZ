@@ -13,6 +13,11 @@
     display:flex;
     flex-direction:column;
 }
+.cv-card-test{
+    height:500px;
+    display:flex;
+    flex-direction:column;
+}
 
 .experience-header{
     display:flex;
@@ -43,7 +48,7 @@
 .experience-list{
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:15px;
     overflow-y:auto;
     padding-right:8px;
 }
@@ -64,17 +69,17 @@
 
 .experience-item{
     display:flex;
-    gap:18px;
-    padding:15px;
+    flex-direction:column;
+    gap:12px;
+    padding:15px 15px 0 15px;
     border-radius:$radius-card;
     background:$back-disabled;
     border:1px solid rgba(255,255,255,.05);
     transition:.35s;
 }
-.experience-item:hover{
+.experience-item:not(.expanded):hover{
     transform:translateX(8px);
-    border-color:rgba($gold,.5);
-    background:rgba($gold,.04);
+    border:1px solid $gold;
 }
 
 .experience-logo{
@@ -121,6 +126,101 @@
     white-space:nowrap;
 }
 
+.experience-main{
+    display:flex;
+    gap:18px;
+}
+
+.experience-more{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8px 12px;
+    border:1px solid rgba($gold,.50);
+    border-radius:10px;
+    background:rgba($gold,.1);
+    color:$gold-light;
+    font-family:inherit;
+    font-size:$font-xs;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+.experience-more:hover{
+    background:rgba($gold,.10);
+    border-color:rgba($gold,.45);
+    color:$gold;
+}
+
+.experience-more i{
+    transition:.3s;
+}
+
+.experience-item.expanded .experience-more i{
+    transform:rotate(180deg);
+}
+
+.experience-details{
+    display:grid;
+    grid-template-rows:0fr;
+    opacity:0;
+    transition:
+        grid-template-rows .4s ease,
+        opacity .3s ease;
+}
+
+.experience-details-inner{
+    overflow:hidden;
+}
+
+.experience-item.expanded .experience-details{
+    grid-template-rows:1fr;
+    opacity:1;
+}
+
+.experience-details-title{
+    color:$gold;
+    font-size:$font-m;
+    font-weight:$font-bolt;
+    margin:5px 0 12px;
+}
+
+.experience-detail-images{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin-bottom:15px;
+}
+
+.experience-detail-image{
+    width:100%;
+    height:150px;
+    overflow:hidden;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.03);
+}
+
+.experience-detail-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.experience-detail-image:hover img{
+    transform:scale(1.04);
+}
+
+.experience-details-text{
+    color:$text-secondary;
+    font-size:$font-s;
+    line-height:1.75;
+    margin-bottom: 25px;
+}
+
+
 
 /*==========================
 Resume Card
@@ -134,12 +234,13 @@ Resume Card
 .resume-preview{
     position:relative;
     flex:1;
+    min-height:0;
     overflow:hidden;
     iframe{
+        display:block;
         width:100%;
         height:100%;
         border:none;
-        // pointer-events:none;
     }
 }
 

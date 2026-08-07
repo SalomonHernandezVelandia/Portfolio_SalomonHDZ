@@ -310,7 +310,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 /* CSS AVATAR  */
@@ -495,7 +495,7 @@
 /* From Uiverse.io by mrhyddenn */ 
 .btn {
     position: relative;
-    padding: 5px 25px;
+    padding: 5px 24px;
     border-radius: $radius-button;
     font-size: $font-xs;
     font-weight: $font-bolt;
@@ -518,6 +518,9 @@
 .btn-gmail {
     border: 1.3px solid rgba($gold-dark, .4);
 }
+.btn-phone {
+    border: 1.3px solid rgba($gold-dark, .4);
+}
 
 .btn:hover {
     border: 1.3px solid rgba($gold, .4);
@@ -538,6 +541,10 @@
 .btn-gmail:hover {
     background: rgba($gmail, .5);
     box-shadow: 0 0 30px 5px $gold-800;
+}
+.btn-phone:hover {
+    background: rgba($phone-dark, .5);
+    box-shadow: 0 0 30px 5px rgba($gold-800, .7);
 }
 
 .btn:hover::before {

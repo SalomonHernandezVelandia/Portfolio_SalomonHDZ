@@ -57,6 +57,10 @@ $github-dark:#3d337e;
 
 $gmail:#F44336;
 
+$phone:#25D366;
+$phone-dark:#128C7E;
+
+
 $python-goldL:#FFDD00;
 $python-goldD:#F4AD11;
 $python-blueL:#00AFFB;
@@ -83,3 +87,54 @@ $text:rgba(255,255,255,.94);
 $text-secondary:rgba(255,255,255,.72);
 $text-disabled:rgba(255,255,255,.45);
 $back-disabled:rgba(255,255,255,.03);
+
+
+// ======================================================
+// THEME SYSTEM
+// ======================================================
+
+:root {
+    // =========================
+    // Dark theme - Default
+    // =========================
+
+    --theme-body: #0D1117;
+    --theme-background: #070A0F;
+    --theme-background-light: #0B1220;
+
+    --theme-nav: rgba(20, 20, 20, .30);
+
+    --theme-text: rgba(255,255,255,.94);
+    --theme-text-secondary: rgba(255,255,255,.72);
+    --theme-text-disabled: rgba(255,255,255,.45);
+
+    --theme-card: rgba(255,255,255,.03);
+
+    --theme-border: rgba(255,255,255,.08);
+
+    --theme-white: #FFFFFF;
+}
+
+
+// ======================================================
+// Light theme
+// ======================================================
+
+body.light-theme {
+
+    --theme-body: #F3EBDD;
+    --theme-background: #EDE3D2;
+    --theme-background-light: #F8F1E5;
+
+    --theme-nav: rgba(244, 235, 218, .72);
+
+    --theme-text: #292334;
+    --theme-text-secondary: #625A6D;
+    --theme-text-disabled: #8C8493;
+
+    --theme-card: rgba(255,255,255,.42);
+
+    --theme-border: rgba(91, 55, 125, .14);
+
+    --theme-white: #292334;
+}
