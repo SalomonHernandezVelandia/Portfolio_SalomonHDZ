@@ -326,7 +326,7 @@
 /* CSS AVATAR  */
 .avatar {
     width:70%;
-    height:170px;
+    height:220px;
     overflow:hidden;
     border-radius:$radius-avatar;
     flex-shrink:0;
@@ -373,7 +373,7 @@
 .dot {
     width: 6px;
     height: 6px;
-    background: $esmerald;
+    background: $available;
     border-radius: $radius-middle;
 }
 
@@ -541,19 +541,19 @@
 
 .btn-link:hover {
     background: rgba($linkeIn, .5);
-    box-shadow: 0 0 30px 5px $gold-800;
+    box-shadow: 0 0 30px 5px $gold;
 }
 .btn-github:hover {
     background: rgba($github, .5);
-    box-shadow: 0 0 30px 5px $gold-800;
+    box-shadow: 0 0 30px 5px $gold;
 }
 .btn-gmail:hover {
     background: rgba($gmail, .5);
-    box-shadow: 0 0 30px 5px $gold-800;
+    box-shadow: 0 0 30px 5px $gold;
 }
 .btn-phone:hover {
     background: rgba($phone-dark, .5);
-    box-shadow: 0 0 30px 5px rgba($gold-800, .7);
+    box-shadow: 0 0 30px 5px rgba($gold, .7);
 }
 
 .btn:hover::before {

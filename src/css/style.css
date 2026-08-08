@@ -42,9 +42,9 @@
 }
 
 body.light-theme {
-  --theme-body: #F3EBDD;
-  --theme-background: #EDE3D2;
-  --theme-background-light: #F8F1E5;
+  --theme-body: #787182;
+  --theme-background: #766b80;
+  --theme-background-light: #655375;
   --theme-nav: rgba(244, 235, 218, .72);
   --theme-text: #292334;
   --theme-text-secondary: #625A6D;
@@ -762,7 +762,7 @@ body {
 /* CSS AVATAR  */
 .avatar {
   width: 70%;
-  height: 170px;
+  height: 220px;
   overflow: hidden;
   border-radius: 18px;
   flex-shrink: 0;
@@ -809,7 +809,7 @@ body {
 .dot {
   width: 6px;
   height: 6px;
-  background: #8B3DFF;
+  background: #0ecc2a;
   border-radius: 50%;
 }
 
@@ -980,22 +980,22 @@ body {
 
 .btn-link:hover {
   background: rgba(14, 118, 168, 0.5);
-  box-shadow: 0 0 30px 5px #5c430d;
+  box-shadow: 0 0 30px 5px #D4AF37;
 }
 
 .btn-github:hover {
   background: rgba(92, 107, 192, 0.5);
-  box-shadow: 0 0 30px 5px #5c430d;
+  box-shadow: 0 0 30px 5px #D4AF37;
 }
 
 .btn-gmail:hover {
   background: rgba(244, 67, 54, 0.5);
-  box-shadow: 0 0 30px 5px #5c430d;
+  box-shadow: 0 0 30px 5px #D4AF37;
 }
 
 .btn-phone:hover {
   background: rgba(18, 140, 126, 0.5);
-  box-shadow: 0 0 30px 5px rgba(92, 67, 13, 0.7);
+  box-shadow: 0 0 30px 5px rgba(212, 175, 55, 0.7);
 }
 
 .btn:hover::before {
@@ -1854,7 +1854,7 @@ Resume Card
     padding: 30px 45px;
   }
   .avatar {
-    height: 240px;
+    height: 280px;
     width: 78%;
   }
   .name {

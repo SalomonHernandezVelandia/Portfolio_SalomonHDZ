@@ -11,6 +11,7 @@ $gold-dark:#aa771c;
 $gold-800: #5c430d;
 $gold-darksidian: #281c04;
 
+$available:#0ecc2a;
 // $esmerald-50: #F1FFFB;
 // $esmerald-100:#D6FFF4;
 // $esmerald-200:#9DFFE4;
@@ -162,9 +163,9 @@ $back-disabled:rgba(255,255,255,.03);
 
 body.light-theme {
 
-    --theme-body: #F3EBDD;
-    --theme-background: #EDE3D2;
-    --theme-background-light: #F8F1E5;
+    --theme-body: #787182;
+    --theme-background: #766b80;
+    --theme-background-light: #655375;
 
     --theme-nav: rgba(244, 235, 218, .72);
 
