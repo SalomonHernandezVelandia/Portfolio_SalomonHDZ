@@ -37,9 +37,14 @@
         color:$gold;
         font-size:$font-l;
         font-weight:$font-bolt;
+        a{
+            color:$gold;
+            font-size:$font-l;
+            font-weight:$font-bolt;
+        }
     }
     span{
-        color:$gold-light;
+        color:var(--theme-goldlight);
         font-size:13px;
         font-weight:500;
     }
@@ -140,7 +145,7 @@
     border:1px solid rgba($gold,.50);
     border-radius:10px;
     background:rgba($gold,.1);
-    color:$gold-light;
+    color:var(--theme-goldlight);
     font-family:inherit;
     font-size:$font-xs;
     font-weight:600;

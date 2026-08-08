@@ -34,6 +34,7 @@
   --theme-footer-border: rgba(255,255,255,.08);
   --theme-footer-social-border: rgba(255,255,255,.08);
   --theme-gold100: #FFF7D6;
+  --theme-goldlight: #fbf5b7;
   --theme-gold300: #F2D76A;
   --theme-goldDarksidian: #281c04;
   --theme-esmerald200: #DEC4FF;
@@ -75,6 +76,7 @@ body.light-theme {
   --theme-footer-border: rgba(90,31,168,.16);
   --theme-footer-social-border: rgba(90,31,168,.16);
   --theme-gold100: #281c04;
+  --theme-goldlight: #aa771c;
   --theme-gold300: #5c430d;
   --theme-goldDarksidian: #D4AF37;
   --theme-esmerald200: #421778;
@@ -1204,8 +1206,13 @@ body {
   font-size: 18px;
   font-weight: 600;
 }
+.experience-header h3 a {
+  color: #D4AF37;
+  font-size: 18px;
+  font-weight: 600;
+}
 .experience-header span {
-  color: #fbf5b7;
+  color: var(--theme-goldlight);
   font-size: 13px;
   font-weight: 500;
 }
@@ -1309,7 +1316,7 @@ body {
   border: 1px solid rgba(212, 175, 55, 0.5);
   border-radius: 10px;
   background: rgba(212, 175, 55, 0.1);
-  color: #fbf5b7;
+  color: var(--theme-goldlight);
   font-family: inherit;
   font-size: 11px;
   font-weight: 600;
@@ -1509,7 +1516,7 @@ Resume Card
 .certification-certificate {
   background: rgba(212, 175, 55, 0.12);
   border: 1px solid rgba(212, 175, 55, 0.35);
-  color: #fbf5b7;
+  color: var(--theme-goldlight);
 }
 
 .certification-badge {
@@ -1518,7 +1525,7 @@ Resume Card
   border-radius: 5px;
   background: rgba(212, 175, 55, 0.12);
   border: 1px solid rgba(212, 175, 55, 0.3);
-  color: #fbf5b7;
+  color: var(--theme-goldlight);
   font-size: 9px;
   font-weight: 600;
 }

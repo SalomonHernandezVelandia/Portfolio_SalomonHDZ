@@ -89,7 +89,7 @@
 .certification-certificate{
     background:rgba($gold,.12);
     border:1px solid rgba($gold,.35);
-    color:$gold-light;
+    color:var(--theme-goldlight);
 }
 
 .certification-badge{
@@ -98,7 +98,7 @@
     border-radius:$radius-button;
     background:rgba($gold,.12);
     border:1px solid rgba($gold,.3);
-    color:$gold-light;
+    color:var(--theme-goldlight);
     font-size:9px;
     font-weight:600;
 }
