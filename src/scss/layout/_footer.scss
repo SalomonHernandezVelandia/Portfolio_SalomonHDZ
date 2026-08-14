@@ -21,12 +21,12 @@
     background:
         radial-gradient(
             circle at left,
-            rgba($esmerald,.1),
+            rgba($esmerald,.4),
             transparent 35%
         ),
         radial-gradient(
             circle at right,
-            rgba($gold,.1),
+            rgba($gold,.4),
             transparent 35%
         );
     pointer-events:none;

@@ -2,13 +2,41 @@
 @use "../abstracts/variables" as *;
 
 
-.hero{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    gap:40px;
-    min-height:100vh;
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    min-height: 100vh;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    // Imagen Dark
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("../img/background/Brain_Purpure_PerceptronDark.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // Controla qué parte de la imagen se muestra
+        background-position: center center;
+        opacity: 0.5;
+        z-index: 0;
+        pointer-events: none;
+    }
+    // Mantiene todo el contenido por encima de la imagen
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+body.light-theme .hero::before {
+    opacity: 1;
+    background-image: url("../img/background/Brain_Purpure_Perceptron.png");
 }
 
 .hero-wrapper{
@@ -59,7 +87,7 @@
     justify-content:center;
     align-items:center;
     gap:10px;
-    color:$esmerald-superdark;
+    color:$esmerald-100;
     cursor:pointer;
     border-radius:$radius-card 0 0 $radius-card;
     z-index:5;

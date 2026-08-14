@@ -36,18 +36,30 @@ $available:#0ecc2a;
 // $esmerald-900:       #003A54;
 // $esmerald-superdark: #001E2C;
 
+// Morados claros
+// $esmerald-50:        #FBF8FF;
+// $esmerald-100:       #F1E8FF;
+// $esmerald-200:       #DEC4FF;
+// $esmerald-light:     #C084FF;
+// $esmerald-400:       #A855F7;
+// $esmerald:           #8B3DFF;
+// $esmerald-600:       #7226D1;
+// $esmerald-700:       #5A1FA8;
+// $esmerald-dark:      #421778;
+// $esmerald-900:       #2A0D4D;
+// $esmerald-superdark: #18072E;
 
-$esmerald-50:        #FBF8FF;
-$esmerald-100:       #F1E8FF;
-$esmerald-200:       #DEC4FF;
-$esmerald-light:     #C084FF;
-$esmerald-400:       #A855F7;
-$esmerald:           #8B3DFF;
-$esmerald-600:       #7226D1;
-$esmerald-700:       #5A1FA8;
-$esmerald-dark:      #421778;
-$esmerald-900:       #2A0D4D;
-$esmerald-superdark: #18072E;
+$esmerald-50:        #F9F6FB;
+$esmerald-100:       #EEE6F3;
+$esmerald-200:       #D9C8E2;
+$esmerald-light:     #B99BC7;
+$esmerald-400:       #9A70AF;
+$esmerald:           #794F98;
+$esmerald-600:       #633F7D;
+$esmerald-700:       #4E3163;
+$esmerald-dark:      #3A244A;
+$esmerald-900:       #24162F;
+$esmerald-superdark: #0C0916;
 
 
 $linkeIn:#0E76A8;
@@ -99,13 +111,13 @@ $back-disabled:rgba(255,255,255,.03);
     // Dark theme - Default
     // =========================
 
-    --theme-body: #0D1117;
+    --theme-body: #0C0916;
     --theme-background: #070A0F;
     --theme-background-light: #0B1220;
 
-    --theme-nav: rgba(20, 20, 20, .30);
+    --theme-nav: rgba(86, 54, 116, 0.5);
 
-    --theme-text: rgba(255,255,255,.94);
+    --theme-text: rgba(235, 205, 253, 0.94);
     --theme-text-secondary: rgba(255,255,255,.72);
     --theme-text-disabled: rgba(255,255,255,.45);
 
@@ -116,11 +128,10 @@ $back-disabled:rgba(255,255,255,.03);
     --theme-white: #FFFFFF;
 
     --theme-bg: #{$body-night};
-    --theme-card-bg: rgba(156, 148, 148, 0.07);
+    --theme-card-bg: rgba(115, 67, 156, 0.243);
     --theme-card-border: rgba(255,255,255,.08);
 
     --theme-text: #{$white};
-    --theme-text-secondary: rgba(255,255,255,.72);
 
     --theme-panel-dark: #{$esmerald-900};
 
@@ -143,16 +154,17 @@ $back-disabled:rgba(255,255,255,.03);
     --theme-certification-border: rgba(255,255,255,.05);
     --theme-certification-hover: rgba($gold,.05);
 
-    --theme-footer-bg: rgba(139,61,255,.10);
+    --theme-footer-bg: rgba(86,54,116,.40);
     --theme-footer-border: rgba(255,255,255,.08);
     --theme-footer-social-border: rgba(255,255,255,.08);
 
     --theme-gold100: #FFF7D6;
     --theme-goldlight: #fbf5b7;
+    --theme-gold: #D4AF37;
     --theme-gold300: #F2D76A;
     --theme-goldDarksidian: #281c04;
     --theme-esmerald200: #DEC4FF;
-    --theme-esmerald900: #2A0D4D;
+    --theme-esmerald900: #24162F;
 
 }
 
@@ -163,15 +175,15 @@ $back-disabled:rgba(255,255,255,.03);
 
 body.light-theme {
 
-    --theme-body: #787182;
-    --theme-background: #766b80;
+    --theme-body: #957FA2;
+    --theme-background: #4e3360;
     --theme-background-light: #655375;
 
-    --theme-nav: rgba(244, 235, 218, .72);
+    --theme-nav: rgba(121, 79, 152, .72);
 
-    --theme-text: #292334;
-    --theme-text-secondary: #625A6D;
-    --theme-text-disabled: #8C8493;
+    --theme-text: #2b1c36;
+    --theme-text-secondary: #24162F;
+    --theme-text-disabled: #633F7D;
 
     --theme-card: rgba(255,255,255,.42);
 
@@ -185,7 +197,6 @@ body.light-theme {
     --theme-card-border: rgba(90,31,168,.18);
 
     --theme-text: #2A1838;
-    --theme-text-secondary: rgba(42,24,56,.72);
 
     --theme-panel-dark: #E9DDF0;
 
@@ -208,16 +219,17 @@ body.light-theme {
     --theme-certification-border: rgba(90,31,168,.16);
     --theme-certification-hover: rgba(212,175,55,.10);
 
-    --theme-footer-bg: rgba(139,61,255,.08);
+    --theme-footer-bg: rgba(121,79,152,.7);
     --theme-footer-border: rgba(90,31,168,.16);
     --theme-footer-social-border: rgba(90,31,168,.16);
 
 
     --theme-gold100: #281c04;
     --theme-goldlight: #aa771c;
+    --theme-gold: rgb(173, 122, 33);
     --theme-gold300: #5c430d;
-    --theme-goldDarksidian: #D4AF37;
+    --theme-goldDarksidian: #b38728;
     --theme-esmerald200: #421778;
-    --theme-esmerald900: #C084FF;
+    --theme-esmerald900: #9A70AF;
 
 }

@@ -34,11 +34,11 @@
         display:flex;
         align-items:center;
         gap:12px;
-        color:$gold;
+        color:var(--theme-gold);
         font-size:$font-l;
         font-weight:$font-bolt;
         a{
-            color:$gold;
+            color:var(--theme-gold);
             font-size:$font-l;
             font-weight:$font-bolt;
         }
@@ -102,7 +102,7 @@
 .experience-content{
     flex:1;
     h5{
-        color:$esmerald;
+        color:var(--theme-esmerald200);
         font-size:$font-s + 2px;
         margin-bottom:10px;
         font-weight:500;
@@ -126,7 +126,7 @@
 }
 
 .experience-date{
-    color:$gold;
+    color:var(--theme-gold);
     font-size:$font-s;
     white-space:nowrap;
 }
