@@ -21,7 +21,7 @@
         display:flex;
         align-items:center;
         gap:12px;
-        color:$gold;
+        color:var(--theme-gold);
         font-size:$font-l;
         font-weight:$font-bolt;
     }
@@ -31,10 +31,11 @@
     span{
         width:110px;
         padding:6px 6px;
+        text-align: center;
         border-radius:$radius-card;
         background:rgba($esmerald,.12);
         border:1px solid rgba($esmerald,.25);
-        color:$esmerald-light;
+        color:var(--theme-text-secondary);
         font-size:$font-xs;
         font-weight:$font-bolt;
     }

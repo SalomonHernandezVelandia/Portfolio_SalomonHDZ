@@ -128,7 +128,8 @@ $back-disabled:rgba(255,255,255,.03);
     --theme-white: #FFFFFF;
 
     --theme-bg: #{$body-night};
-    --theme-card-bg: rgba(115, 67, 156, 0.243);
+    --theme-card-bg: rgba(154, 112, 175, 0.4);
+    --theme-card-bg2: rgba(154, 112, 175, 0.4);
     --theme-card-border: rgba(255,255,255,.08);
 
     --theme-text: #{$white};
@@ -181,7 +182,7 @@ body.light-theme {
 
     --theme-nav: rgba(121, 79, 152, .72);
 
-    --theme-text: #2b1c36;
+    --theme-text: #0C0916;
     --theme-text-secondary: #24162F;
     --theme-text-disabled: #633F7D;
 
@@ -193,10 +194,9 @@ body.light-theme {
 
     --theme-bg: #F4EBDD;
 
-    --theme-card-bg: rgba(255,255,255,.42);
+    --theme-card-bg: rgba(58,36,74,.6);
+    --theme-card-bg2: rgb(236, 206, 255);
     --theme-card-border: rgba(90,31,168,.18);
-
-    --theme-text: #2A1838;
 
     --theme-panel-dark: #E9DDF0;
 

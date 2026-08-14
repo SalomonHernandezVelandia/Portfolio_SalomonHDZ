@@ -11,7 +11,8 @@
   --theme-border: rgba(255,255,255,.08);
   --theme-white: #FFFFFF;
   --theme-bg: #0D1117;
-  --theme-card-bg: rgba(115, 67, 156, 0.243);
+  --theme-card-bg: rgba(154, 112, 175, 0.4);
+  --theme-card-bg2: rgba(154, 112, 175, 0.4);
   --theme-card-border: rgba(255,255,255,.08);
   --theme-text: #FFF;
   --theme-panel-dark: #24162F;
@@ -46,16 +47,16 @@ body.light-theme {
   --theme-background: #4e3360;
   --theme-background-light: #655375;
   --theme-nav: rgba(121, 79, 152, .72);
-  --theme-text: #2b1c36;
+  --theme-text: #0C0916;
   --theme-text-secondary: #24162F;
   --theme-text-disabled: #633F7D;
   --theme-card: rgba(255,255,255,.42);
   --theme-border: rgba(91, 55, 125, .14);
   --theme-white: #292334;
   --theme-bg: #F4EBDD;
-  --theme-card-bg: rgba(255,255,255,.42);
+  --theme-card-bg: rgba(58,36,74,.6);
+  --theme-card-bg2: rgb(236, 206, 255);
   --theme-card-border: rgba(90,31,168,.18);
-  --theme-text: #2A1838;
   --theme-panel-dark: #E9DDF0;
   --theme-glass-light: rgba(255,255,255,.35);
   --theme-glass-border: rgba(90,31,168,.16);
@@ -212,12 +213,12 @@ body {
 }
 .sections-title i {
   font-size: 20px;
-  color: #D4AF37;
+  color: #E3C14D;
 }
 .sections-title h2 {
   font-size: 32px;
   font-weight: 600;
-  color: #D4AF37;
+  color: #E3C14D;
   letter-spacing: 1px;
 }
 
@@ -508,7 +509,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: 0;
   pointer-events: none;
 }
@@ -518,7 +519,7 @@ body {
 }
 
 body.light-theme .hero::before {
-  opacity: 1;
+  opacity: 0.7;
   background-image: url("../img/background/Brain_Purpure_Perceptron.png");
 }
 
@@ -749,7 +750,7 @@ body.light-theme .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 15% 10%, rgba(121, 79, 152, 0.16), transparent 35%), radial-gradient(circle at 85% 90%, rgba(212, 175, 55, 0.14), transparent 40%);
+  background: radial-gradient(circle at 15% 10%, rgba(217, 200, 226, 0.16), transparent 35%), radial-gradient(circle at 85% 90%, rgba(227, 193, 77, 0.14), transparent 40%);
   pointer-events: none;
 }
 
@@ -763,11 +764,7 @@ body.light-theme .hero::before {
 }
 
 .card:hover .glass {
-  opacity: 0.9;
-}
-
-.card:hover .glass {
-  opacity: 0.9;
+  opacity: 0.99;
 }
 
 .card-top > *:not(.glass) {
@@ -812,13 +809,13 @@ body.light-theme .hero::before {
 .meta {
   max-width: 200px;
   font-size: 12px;
-  color: var(--theme-gold100);
+  color: #FFF7D6;
   margin-bottom: 5px;
 }
 
 /* INFO */
 .name {
-  color: var(--theme-text);
+  color: #FFFDF2;
   font-weight: 600;
   font-size: 15px;
 }
@@ -828,7 +825,7 @@ body.light-theme .hero::before {
   align-items: center;
   gap: 6px;
   font-size: 12px;
-  color: var(--theme-text-secondary);
+  color: #FFFDF2;
 }
 
 .dot {
@@ -970,7 +967,7 @@ body.light-theme .hero::before {
   font-weight: 600;
   letter-spacing: 2px;
   background: transparent;
-  color: var(--theme-text);
+  color: #FFFDF2;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 0 0 0 transparent;
@@ -980,19 +977,19 @@ body.light-theme .hero::before {
 }
 
 .btn-link {
-  border: 1.3px solid rgba(170, 119, 28, 0.4);
+  border: 1.3px solid rgba(227, 193, 77, 0.4);
 }
 
 .btn-github {
-  border: 1.3px solid rgba(170, 119, 28, 0.4);
+  border: 1.3px solid rgba(227, 193, 77, 0.4);
 }
 
 .btn-gmail {
-  border: 1.3px solid rgba(170, 119, 28, 0.4);
+  border: 1.3px solid rgba(227, 193, 77, 0.4);
 }
 
 .btn-phone {
-  border: 1.3px solid rgba(170, 119, 28, 0.4);
+  border: 1.3px solid rgba(227, 193, 77, 0.4);
 }
 
 .btn:hover {
@@ -1273,7 +1270,7 @@ body.light-theme .hero::before {
   gap: 12px;
   padding: 15px 15px 0 15px;
   border-radius: 26px;
-  background: var(--theme-card-bg);
+  background: var(--theme-card-bg2);
   border: 1px solid var(--theme-card-border);
   transition: 0.35s;
 }
@@ -1473,7 +1470,7 @@ Resume Card
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #D4AF37;
+  color: var(--theme-gold);
   font-size: 18px;
   font-weight: 600;
 }
@@ -1483,10 +1480,11 @@ Resume Card
 .certifications-header span {
   width: 110px;
   padding: 6px 6px;
+  text-align: center;
   border-radius: 26px;
   background: rgba(121, 79, 152, 0.12);
   border: 1px solid rgba(121, 79, 152, 0.25);
-  color: #B99BC7;
+  color: var(--theme-text-secondary);
   font-size: 11px;
   font-weight: 600;
 }
@@ -2077,7 +2075,7 @@ Resume Card
   overflow: auto;
   padding: 30px;
   border-radius: 26px;
-  background: rgba(10, 10, 15, 0.92);
+  background: var(--theme-esmerald900);
   backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
