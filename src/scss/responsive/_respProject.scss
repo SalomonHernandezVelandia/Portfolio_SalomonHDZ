@@ -23,10 +23,6 @@
     .main-content{
         grid-template-columns:320px 1fr;
     }
-
-    .project-media{
-        height:220px;
-    }
 }
 
 
@@ -59,7 +55,7 @@
         grid-template-columns:220px 1fr;
     }
 
-    .project-content{
+    .project-content-father{
         padding:16px;
     }
 
@@ -102,8 +98,11 @@
         object-fit:cover;
     }
 
-    .project-content{
+    .project-content-father {
         padding:20px;
+    }
+
+    .project-content{
         gap:14px;
         h3{
             height:auto;
@@ -139,7 +138,7 @@
         height:170px;
     }
 
-    .project-content{
+    .project-content-father{
         padding:15px;
     }
 }

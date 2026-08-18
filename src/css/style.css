@@ -1082,11 +1082,18 @@ body.light-theme .hero::before {
   gap: 10px;
 }
 
+.project-content-father {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+  gap: 0;
+}
+
 .project-content {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 20px 30px;
 }
 .project-content h3 {
   color: var(--theme-text);
@@ -1105,7 +1112,7 @@ body.light-theme .hero::before {
 .project-media {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 220px;
   overflow: hidden;
 }
 .project-media img {
@@ -1119,7 +1126,7 @@ body.light-theme .hero::before {
   flex-wrap: wrap;
   height: auto;
   gap: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .tech-pill {
@@ -2197,9 +2204,6 @@ Resume Card
   .main-content {
     grid-template-columns: 320px 1fr;
   }
-  .project-media {
-    height: 220px;
-  }
 }
 @media (max-width: 1024px) {
   .sections {
@@ -2222,7 +2226,7 @@ Resume Card
   .main-content {
     grid-template-columns: 220px 1fr;
   }
-  .project-content {
+  .project-content-father {
     padding: 16px;
   }
   .project-buttons {
@@ -2255,8 +2259,10 @@ Resume Card
     height: 100%;
     object-fit: cover;
   }
-  .project-content {
+  .project-content-father {
     padding: 20px;
+  }
+  .project-content {
     gap: 14px;
   }
   .project-content h3 {
@@ -2286,7 +2292,7 @@ Resume Card
   .project-media {
     height: 170px;
   }
-  .project-content {
+  .project-content-father {
     padding: 15px;
   }
 }

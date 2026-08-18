@@ -37,6 +37,8 @@ const TECHNOLOGY_COLORS = {
     Express:"#616161",
     "Spring Boot":"#689F38",
     Laravel:"#E53935",
+    CustomTkinter:"#007cf8",
+    OOP:"#002953",
     // Desarrollo Web
     HTML:"#E34F26",
     CSS:"#1565C0",
@@ -111,15 +113,20 @@ const projects = [
         ]
     },
     {
-        title: "English Vocabulary Learning Project with Python",
-        description: "Program designed to teach English through a small, interactive game with a graphical interface. The system allows the user to enter words, which are then automatically analyzed and scored, providing immediate feedback to support the learning process.",
+        title: "English Vocabulary Learning",
+        description: "The application allows users to practice English vocabulary through different languages, proficiency levels, categories, and learning modes. The project was originally developed as a Python desktop application and it was extended with a web version so that the application can be accessed directly from a browser",
         gif: "img/projects/Learning_English.jpg",
         github: "https://github.com/SalomonHernandezVelandia/LearningVocabularyEnglish_ConInterfaz",
         githubAvailable: true,
-        demo: "#",
-        demoAvailable: false,
+        demo: "https://learning-vocabulary-english-con-int.vercel.app/",
+        demoAvailable: true,
         technologies:[
-            { name:"Python", level:100, percentage:true},
+            { name:"Python", level:54, percentage:true},
+            { name:"JavaScript", level:33, percentage:true},
+            { name:"Sass", level:7, percentage:true},
+            { name:"HTML", level:6, percentage:true},
+            { name:"CustomTkinter"},
+            { name:"OOP"},
             { name:"Git"},
         ]
     }
